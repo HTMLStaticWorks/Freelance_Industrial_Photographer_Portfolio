@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Showcase Portfolio | Indus Photo Industrial Photography</title>
+  <meta name="description"
+    content="Browse my portfolio of completed industrial photography projects. Filter by manufacturing, civil infrastructure construction, drone operations, and corporate portraits.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Client Showcase Portfolio | Indus Photo Industrial Photography">
+  <meta property="og:description"
+    content="Premium completed shoots showcasing engineering scale, manufacturing grit, and safety-compliant aerial drone operations.">
+  <meta property="og:image" content="images/hero_industrial.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="portfolio-page">
+
+  <!-- HEADER -->
+  <header class="header sticky" id="header"
+    style="background: var(--bg-header); border-bottom: 1px solid var(--border-color);">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">I</div>
+        <div class="logo-text">Indus Photo<span>.</span></div>
+      </a>
+      <nav class="nav" id="nav-menu">
+        <div class="nav-dropdown desktop-only">
+          <a href="#" class="nav-link dropdown-toggle" id="nav-home">Home <svg class="dropdown-arrow" width="10"
+              height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M1 1L5 5L9 1" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></a>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-item">Home 1</a>
+            <a href="index2.html" class="dropdown-item">Home 2</a>
+          </div>
+        </div>
+        <a href="index.html" class="nav-link mobile-only" id="nav-home1-mob">Home 1</a>
+        <a href="index2.html" class="nav-link mobile-only" id="nav-home2-mob">Home 2</a>
+        <a href="about.html" class="nav-link" id="nav-about">About Me</a>
+        <a href="services.html" class="nav-link" id="nav-services">Sectors</a>
+        <a href="portfolio.html" class="nav-link active" id="nav-portfolio">Portfolio</a>
+        <a href="process.html" class="nav-link" id="nav-process">Process</a>
+        <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
+        <a href="login.html" class="nav-link mobile-only login-mobile-btn" id="nav-login-mob">Login</a>
+      </nav>
+      <div class="header-actions">
+        <!-- RTL Toggle -->
+        <button id="rtl-toggle" class="theme-toggle" aria-label="Toggle Layout Direction"
+          style="font-size: 0.85rem; font-weight: 500;">RTL</button>
+        <!-- Dark Mode Toggle -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <a href="login.html" class="btn btn-primary desktop-only"
+          style="padding: 0.6rem 1.25rem; font-size: 0.9rem;">Login</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <svg class="hamburger-close-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+            style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- INNER PAGE HERO -->
+  <section class="section"
+    style="padding-top: 7.5rem; padding-bottom: 3.5rem; background: var(--primary); color: #FFFFFF; position: relative;">
+    <div
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--premium-gradient); opacity: 0.05;">
+    </div>
+    <div class="container" style="position: relative; z-index: 2; text-align: center;">
+      <span class="badge"
+        style="background: rgba(255,255,255,0.1); color: #FFFFFF; border-color: rgba(255,255,255,0.2);">Gallery
+        Showcase</span>
+      <h1 style="color: #FFFFFF; font-size: 3.5rem; margin-bottom: 1rem;">My Completed Work</h1>
+      <p class="lead-text" style="color: rgba(248, 250, 252, 0.8); max-width: 700px; margin: 0 auto;">Review high-resolution examples of industrial sites and processes captured with safety-certified precision.</p>
+    </div>
+  </section>
+
+  <!-- FEATURED COMPARISON SECTION -->
+  <section class="section featured-transformation-section" style="background: var(--bg-card); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Featured Transformation</span>
+        <h2>Processed Showcase</h2>
+        <p class="section-subtitle">Slide the interactive handle to see how custom digital coloring and tone curves develop flat RAW frames into PR-ready corporate assets.</p>
+      </div>
+
+      <div class="comparison-slider-wrapper" style="max-width: 900px; margin: 0 auto; aspect-ratio: 16 / 10;">
+        <div class="comparison-slider">
+          <div class="slider-img slider-before">
+            <img src="images/eb05ef4b-0b22-4258-8f8d-be9d2fb15770.png" alt="Unprocessed raw camera photograph of steel furnace with flat gray profile">
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTERABLE GALLERY SECTION -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Filters -->
+      <div class="portfolio-filters" id="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All Sectors</button>
+        <button class="filter-btn" data-filter="manufacturing">Heavy Manufacturing</button>
+        <button class="filter-btn" data-filter="infrastructure">Civil Infrastructure</button>
+        <button class="filter-btn" data-filter="energy">Energy & Utilities</button>
+        <button class="filter-btn" data-filter="drone">Drone Mapping</button>
+        <button class="filter-btn" data-filter="portraits">Corporate Portraits</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="portfolio-grid" id="portfolio-grid">
+
+        <!-- Project 1: Manufacturing -->
+        <div class="portfolio-item" data-category="manufacturing" data-client="Apex Heavy Systems" data-time="1 Day Shoot"
+          data-setup="Sony Alpha 7R V, 24-70mm f/2.8 GM II" data-gear="Hardhat, Safety Glasses, Steel-Toes"
+          data-desc="High-impact ground photography captured inside active turbine assembly bays. Spotlighting worker welding processes with precise contrast control.">
+          <img src="https://heavyindustries.gov.in/themes/mhi/images/assembly.jpg"
+            alt="Robotic automated welding arms inside heavy assembly plant throwing orange sparks">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Heavy Manufacturing</span>
+            <h3 class="portfolio-title">Apex Assembly Plant</h3>
+            <span class="portfolio-link">
+              View Shoot Specs &rarr;
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 2: Infrastructure -->
+        <div class="portfolio-item" data-category="infrastructure" data-client="Jenkins Civil Construction" data-time="2 Days Shoot"
+          data-setup="Sony Alpha 7R V, 70-200mm f/2.8 GM II" data-gear="OSHA-PPE, High-Visibility Vest, Harness"
+          data-desc="Golden hour construction document mapping bridge span concrete pours and tower rigging coordinates. Shot for structural PR campaign.">
+          <img src="https://www.coventry.ac.uk/contentassets/281dc7d7f79241c582d98dbd41b157ee/civil-engineering.jpg"
+            alt="Steel suspension bridge construction site with tower crane silhouette at sunset golden hour">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Civil Infrastructure</span>
+            <h3 class="portfolio-title">Jenkins Bridge Rollout</h3>
+            <span class="portfolio-link">
+              View Shoot Specs &rarr;
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 3: Energy -->
+        <div class="portfolio-item" data-category="energy" data-client="Great Lakes Utilities" data-time="3 Days Shoot"
+          data-setup="Sony Alpha 7R V, 16-35mm f/2.8 GM" data-gear="OSHA-PPE, Site Escort, Heavy boots"
+          data-desc="High-dynamic-range landscape captures showing utility-scale wind farms and transmission substations on rural hillsides at sunset.">
+          <img src="https://www.pwc.com/gx/en/brand-simplified/teaser-images-670/energy-utilities/damil-gettyimages-970436736-670.jpg" alt="Vast wind turbines on hillside operating at sunset">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Energy & Utilities</span>
+            <h3 class="portfolio-title">Great Lakes Wind Farm</h3>
+            <span class="portfolio-link">
+              View Shoot Specs &rarr;
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 4: Drone -->
+        <div class="portfolio-item" data-category="drone" data-client="Apex Energy" data-time="Half-Day Shoot"
+          data-setup="DJI Mavic 3 Pro Cine (FAA Part 107)" data-gear="High-Visibility vest, hardhat, TWIC card"
+          data-desc="FAA-licensed commercial drone progress inspections and high-resolution orthomosaic views mapping substation power lines from above.">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdeUQQRAjbMurwhpFSxkeFaqqHpN-zxozFt66XrPmnXtBL1bNG0FNi5t8&s=10"
+            alt="High-resolution drone mapping scan view of industrial plant boundaries">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Drone Mapping</span>
+            <h3 class="portfolio-title">Apex Grid Aerials</h3>
+            <span class="portfolio-link">
+              View Shoot Specs &rarr;
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 5: Portraits -->
+        <div class="portfolio-item" data-category="portraits" data-client="Jenkins Civil Construction" data-time="1 Day Shoot"
+          data-setup="Sony Alpha 7R V, 85mm f/1.4 GM" data-gear="Full site PPE, Portable studio lights"
+          data-desc="On-site corporate headshots and environmental portraits of operations managers, engineers, and coordinators in safety gear.">
+          <img src="https://images.squarespace-cdn.com/content/v1/687567d31dda9175ecaad624/1f6fae40-4ee2-46c6-ae78-14ffe3045b44/corporate-group-portrait_1813.jpg"
+            alt="Industrial team lead in safety hardhat and high-visibility vest holding tools inside cleanroom factory">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Corporate Portraits</span>
+            <h3 class="portfolio-title">Jenkins Site Portraits</h3>
+            <span class="portfolio-link">
+              View Shoot Specs &rarr;
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 6: Manufacturing Addon 1 -->
+        <div class="portfolio-item" data-category="manufacturing" data-client="Vanguard Motors" data-time="2 Days Shoot"
+          data-setup="Sony Alpha 7R V, 50mm f/1.2 GM" data-gear="Steel-toes, Safety goggles, Hearing protection"
+          data-desc="Cinematic capture of automotive welding line. Spotlighting sparks and robotic precision assembly.">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkP-bsxkcoYWMov3utMVnwmizmUZ37YyCCQlamzXuYZfqpAK2FTFlKSPlU&s=10"
+            alt="Robotic welding arm on automotive assembly line throwing orange sparks">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Heavy Manufacturing</span>
+            <h3 class="portfolio-title">Robotic Welding Line</h3>
+            <span class="portfolio-link">
+              View Shoot Specs &rarr;
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 7: Manufacturing Addon 2 -->
+        <div class="portfolio-item" data-category="manufacturing" data-client="Titan Steelworks" data-time="1 Day Shoot"
+          data-setup="Sony Alpha 7R V, 35mm f/1.4 GM" data-gear="Thermal suit, Face shield, Respirator"
+          data-desc="Steel mill furnace operator managing molten steel pours with high-contrast glowing metallic highlights.">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCR_6ayq3OL7e0o6Qm3Z-1-0pVPuOefzi3hmU8ROkoFKzDrgM_wCODq2cg&s=10"
+            alt="Steel mill operator in heat-resistant gear looking at glowing molten metal">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Heavy Manufacturing</span>
+            <h3 class="portfolio-title">Titan Foundry Operations</h3>
+            <span class="portfolio-link">
+              View Shoot Specs &rarr;
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 8: Manufacturing Addon 3 -->
+        <div class="portfolio-item" data-category="manufacturing" data-client="Precision Gears Inc" data-time="1 Day Shoot"
+          data-setup="Sony Alpha 7R V, 90mm f/2.8 Macro" data-gear="Cleanroom suit, ESD shoes, hairnet"
+          data-desc="Macro details of heavy CNC precision milling machinery actively cutting industrial components with coolant spray.">
+          <img src="https://www.stonewallco.com/hubfs/Facebook%20-%20Featured%20Image%20-%20PES%20(10).jpeg"
+            alt="Massive CNC machining center fabricating high-precision gear cylinders with blue fluid mist">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Heavy Manufacturing</span>
+            <h3 class="portfolio-title">CNC Precision Milling</h3>
+            <span class="portfolio-link">
+              View Shoot Specs &rarr;
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 9: Energy Addon 1 -->
+        <div class="portfolio-item" data-category="energy" data-client="Solaris Clean Energy" data-time="2 Days Shoot"
+          data-setup="Sony Alpha 7R V, 16-35mm f/2.8 GM" data-gear="OSHA-PPE, high-visibility vest, hardhat"
+          data-desc="Wide twilight landscape showcasing rows of solar tracking panels under a vibrant purple sunset.">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpQjlij8MQ2gyXAdk7VzYQq_1SwY9DxLiADHdE4RqruOUssm2bqwL0hO1X&s=10" alt="A vast solar farm with rows of panels reflecting an orange sunset sky">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Energy & Utilities</span>
+            <h3 class="portfolio-title">Solaris Tracking Grid</h3>
+            <span class="portfolio-link">
+              View Shoot Specs &rarr;
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 10: Energy Addon 2 -->
+        <div class="portfolio-item" data-category="energy" data-client="Summit Wind Systems" data-time="3 Days Shoot"
+          data-setup="Sony Alpha 7R V, 70-200mm f/2.8 GM" data-gear="Climbing harness, helmet, safety line"
+          data-desc="Dramatic low-angle framing of wind turbine generator nacelles on green rolling hills at twilight.">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSFEiVNVumu-fj23qrJ7SDIRRSHCk6I80eeF8cHVyx0BSBAufrYyYsg_st&s=10" alt="Massive wind turbine generators spinning on hillsides under twilight skies">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Energy & Utilities</span>
+            <h3 class="portfolio-title">Summit Ridge Turbines</h3>
+            <span class="portfolio-link">
+              View Shoot Specs &rarr;
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 11: Energy Addon 3 -->
+        <div class="portfolio-item" data-category="energy" data-client="Pioneer Substation Grid" data-time="1 Day Shoot"
+          data-setup="Sony Alpha 7R V, 24-70mm f/2.8 GM II" data-gear="Arc-flash suit, dielectric boots, ESC safety card"
+          data-desc="Night-time capture of industrial high-voltage transformer units with technical detail lighting.">
+          <img src="images/portfolio_energy_3.png" alt="Electrical substation transformers illuminated at night under a dark blue sky">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Energy & Utilities</span>
+            <h3 class="portfolio-title">Pioneer Substation Night</h3>
+            <span class="portfolio-link">
+              View Shoot Specs &rarr;
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 12: Infrastructure Addon 1 -->
+        <div class="portfolio-item" data-category="infrastructure" data-client="Summit Builders" data-time="2 Days Shoot"
+          data-setup="Sony Alpha 7R V, 16-35mm f/2.8 GM" data-gear="Safety harness, helmet, high-vis vest"
+          data-desc="Architectural progress capture of massive concrete interchange piers and flyovers during early morning light.">
+          <img src="images/portfolio_infrastructure_2.png" alt="Massive concrete flyover highway columns under construction at sunrise">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Civil Infrastructure</span>
+            <h3 class="portfolio-title">Summit Highway Flyovers</h3>
+            <span class="portfolio-link">
+              View Shoot Specs &rarr;
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRY AWARDS & RECOGNITION SECTION -->
+  <section class="section recognition-section"
+    style="background: var(--bg-card); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Recognition</span>
+        <h2 class="section-title">Awards & Industry Recognition</h2>
+        <p class="section-subtitle">My commitment to safety compliance and photography excellence has been recognized by industry organizations.</p>
+      </div>
+      <div class="stack-on-mobile stack-4-to-2" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;">
+        <div class="premium-card" style="text-align: center;">
+          <div class="card-img-wrapper" style="height: auto; aspect-ratio: 1 / 1; background: rgba(249, 115, 22, 0.02); border-bottom: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; overflow: hidden;">
+            <img src="images/award_epac.png" alt="EPAC Gold Trophy Award Badge" style="width: 100%; height: 100%; object-fit: contain; padding: 1.75rem; border-radius: 50%; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+          </div>
+          <div class="card-body" style="padding: 1.5rem 2rem 2.25rem 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h3 style="font-size: 1.1rem; font-weight: 560; margin-bottom: 0.5rem; color: var(--accent);">EPAC Photo Award</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0;">Engineering & Progress Association Gold Award for Outstanding Site Progress Documentation 2024.</p>
+          </div>
+        </div>
+        <div class="premium-card" style="text-align: center;">
+          <div class="card-img-wrapper" style="height: auto; aspect-ratio: 1 / 1; background: rgba(249, 115, 22, 0.02); border-bottom: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; overflow: hidden;">
+            <img src="images/award_pr.png" alt="National PR Award Gold Medal" style="width: 100%; height: 100%; object-fit: contain; padding: 1.75rem; border-radius: 50%; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+          </div>
+          <div class="card-body" style="padding: 1.5rem 2rem 2.25rem 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h3 style="font-size: 1.1rem; font-weight: 560; margin-bottom: 0.5rem; color: var(--accent);">National PR Award</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0;">Excellence in Corporate Annual Reports & ESG Media Campaign Visuals Gold Medal 2023.</p>
+          </div>
+        </div>
+        <div class="premium-card" style="text-align: center;">
+          <div class="card-img-wrapper" style="height: auto; aspect-ratio: 1 / 1; background: rgba(249, 115, 22, 0.02); border-bottom: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; overflow: hidden;">
+            <img src="images/award_drone.png" alt="CEPA Top Drone Award Badge" style="width: 100%; height: 100%; object-fit: contain; padding: 1.75rem; border-radius: 50%; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+          </div>
+          <div class="card-body" style="padding: 1.5rem 2rem 2.25rem 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h3 style="font-size: 1.1rem; font-weight: 560; margin-bottom: 0.5rem; color: var(--accent);">CEPA Top Drone</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0;">Civil Engineering Photo Association Top Drone Mapping Portfolio Member — consecutive years 2022.</p>
+          </div>
+        </div>
+        <div class="premium-card" style="text-align: center;">
+          <div class="card-img-wrapper" style="height: auto; aspect-ratio: 1 / 1; background: rgba(249, 115, 22, 0.02); border-bottom: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; overflow: hidden;">
+            <img src="images/award_osha.png" alt="OSHA Safety Compliance Shield Badge" style="width: 100%; height: 100%; object-fit: contain; padding: 1.75rem; border-radius: 50%; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+          </div>
+          <div class="card-body" style="padding: 1.5rem 2rem 2.25rem 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h3 style="font-size: 1.1rem; font-weight: 560; margin-bottom: 0.5rem; color: var(--accent);">OSHA Media Partner</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0;">Recognized safety-first site documentation expert, fully trained in hazardous industrial practices.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT METRICS SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Portfolio by Numbers</span>
+        <h2 class="section-title">Proven Portfolio Performance</h2>
+        <p class="section-subtitle">Every project in my showcase portfolio represents compliance, efficiency, and high-impact media output for engineering partners.</p>
+      </div>
+      <div class="stack-on-mobile"
+        style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; margin-bottom: 4rem;">
+        <div
+          style="text-align: center; padding: 3rem 2rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+          <div style="font-size: 3.5rem; font-weight: 580; margin-bottom: 0.5rem;">
+            100%</div>
+          <h3 style="font-size: 1.1rem; font-weight: 560; margin-bottom: 0.75rem;">Safety Record Compliance</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Zero safety incidents or operational delays across all 150+ heavy site shoots.</p>
+        </div>
+        <div
+          style="text-align: center; padding: 3rem 2rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+          <div style="font-size: 3.5rem; font-weight: 580; margin-bottom: 0.5rem;">
+            24hr</div>
+          <h3 style="font-size: 1.1rem; font-weight: 560; margin-bottom: 0.75rem;">Average Digital Proofs Time</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Initial color-graded proofing galleries delivered rapidly to meet tight PR and bid submission deadlines.</p>
+        </div>
+        <div
+          style="text-align: center; padding: 3rem 2rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+          <div style="font-size: 3.5rem; font-weight: 580; margin-bottom: 0.5rem;">
+            $5M</div>
+          <h3 style="font-size: 1.1rem; font-weight: 560; margin-bottom: 0.75rem;">General Liability Insurance</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Fully backed by specialized liability insurance tailored for hazardous utilities and construction zones.</p>
+        </div>
+      </div>
+      <div style="text-align: center;">
+        <a href="contact.html" class="btn btn-primary">Start Your Proposal Brief</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL (POPUP) -->
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close Project Popup">&times;</button>
+      <div class="lightbox-grid">
+        <div class="lightbox-visual">
+          <img class="lightbox-img" src="" alt="Zoomed project preview">
+        </div>
+        <div class="lightbox-details">
+          <span class="lightbox-tag">Category</span>
+          <h2 class="lightbox-title">Project Name</h2>
+          <p class="lightbox-desc">Detailed client specification and design goals completed by Indus Photo specialists.
+          </p>
+
+          <div class="lightbox-meta">
+            <div class="lightbox-meta-item">
+              <h5>Client</h5>
+              <p class="meta-client">Client Business Name</p>
+            </div>
+            <div class="lightbox-meta-item">
+              <h5>Shoot Duration</h5>
+              <p class="meta-time">1 Day Shoot</p>
+            </div>
+            <div class="lightbox-meta-item">
+              <h5>Camera Setup</h5>
+              <p class="meta-setup">Sony Alpha 7R V</p>
+            </div>
+            <div class="lightbox-meta-item">
+              <h5>Safety PPE Worn</h5>
+              <p class="meta-gear">Hardhat, Glasses, Steel-toes</p>
+            </div>
+          </div>
+
+          <a href="contact.html" class="btn btn-primary" style="margin-top: auto;">Request Site Proposal</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">I</div>
+            <div class="logo-text">Indus Photo<span>.</span></div>
+          </a>
+          <p class="footer-desc">Cinematic heavy industry, energy sector, and infrastructure project photography for engineering contractors and media teams.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn brand-linkedin" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="#" class="social-btn brand-facebook" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-btn brand-twitter" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" class="social-btn brand-instagram" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About Me</a></li>
+            <li><a href="process.html" class="footer-link">My Process</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+            <li><a href="about.html#faq" class="footer-link">FAQs</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Sectors</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Manufacturing</a></li>
+            <li><a href="services.html" class="footer-link">Infrastructure</a></li>
+            <li><a href="services.html" class="footer-link">Energy & Utilities</a></li>
+            <li><a href="services.html" class="footer-link">Drone Operations</a></li>
+            <li><a href="services.html" class="footer-link">Corporate Portraits</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Contact Studio</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>700 Steel Boulevard, Suite 100, Pittsburgh, PA 15222</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            <span>(800) 555-PHOT</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>contact@indusphoto.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Indus Photo. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top Button -->
+  <button id="scroll-top" class="scroll-top-btn" aria-label="Scroll to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Script JS Link -->
+  <script src="main.js"></script>
+</body>
+
+</html>

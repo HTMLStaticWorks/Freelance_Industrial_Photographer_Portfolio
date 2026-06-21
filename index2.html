@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indus Photo | Premium Industrial Portfolio (Edition 2)</title>
+  <meta name="description"
+    content="Custom site photography for manufacturing, infrastructure, energy, and logistics assets. PDAA/TWIC certified with $5M commercial general liability insurance.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Indus Photo | Premium Industrial Portfolio (Edition 2)">
+  <meta property="og:description"
+    content="Custom site photography for manufacturing, infrastructure, energy, and logistics assets. TWIC/OSHA certified.">
+  <meta property="og:image" content="images/manufacturing.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="home-page home-page-2">
+
+  <!-- HEADER — sits above hero, never overlapping -->
+  <header class="header sticky" id="header"
+    style="background: var(--bg-header); border-bottom: 1px solid rgba(255,255,255,0.12);">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">I</div>
+        <div class="logo-text">Indus Photo<span>.</span></div>
+      </a>
+      <nav class="nav" id="nav-menu">
+        <div class="nav-dropdown desktop-only">
+          <a href="#" class="nav-link dropdown-toggle active" id="nav-home">Home <svg class="dropdown-arrow" width="10"
+              height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M1 1L5 5L9 1" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></a>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-item">Home 1</a>
+            <a href="index2.html" class="dropdown-item active"
+              style="background: rgba(249, 115, 22, 0.1); color: var(--accent);">Home 2</a>
+          </div>
+        </div>
+        <a href="index.html" class="nav-link mobile-only" id="nav-home1-mob">Home 1</a>
+        <a href="index2.html" class="nav-link mobile-only active" id="nav-home2-mob" style="color: var(--accent);">Home 2</a>
+        <a href="about.html" class="nav-link" id="nav-about">About Me</a>
+        <a href="services.html" class="nav-link" id="nav-services">Sectors</a>
+        <a href="portfolio.html" class="nav-link" id="nav-portfolio">Portfolio</a>
+        <a href="process.html" class="nav-link" id="nav-process">Process</a>
+        <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
+        <a href="login.html" class="nav-link mobile-only login-mobile-btn" id="nav-login-mob">Login</a>
+      </nav>
+      <div class="header-actions">
+        <button id="rtl-toggle" class="theme-toggle" aria-label="Toggle Layout Direction"
+          style="font-size: 0.85rem; font-weight: 500;">RTL</button>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <a href="login.html" class="btn btn-primary desktop-only"
+          style="padding: 0.6rem 1.25rem; font-size: 0.9rem;">Login</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <svg class="hamburger-close-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+            style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 1: HERO (Robotic Welding Background) -->
+  <section class="hero" id="hero"
+    style="min-height: 80vh; padding-top: 7.5rem; padding-bottom: 6rem; display: flex; align-items: center; justify-content: center;">
+    <div class="hero-bg">
+      <img src="images/manufacturing.jpg" alt="Robotic assembly line welding with sparks in dark factory floor"
+        style="object-position: center center;">
+    </div>
+    <!-- Gradient overlay -->
+    <div
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(11,15,23,0.25) 0%, rgba(22,30,46,0.45) 100%); z-index: 2;">
+    </div>
+    <div class="container" style="position: relative; z-index: 3; text-align: center; width: 100%;">
+      <div style="max-width: 860px; margin: 0 auto;">
+        <span class="badge"
+          style="background: rgba(249,115,22,0.25); color: #FFFFFF; border-color: rgba(249,115,22,0.5);">Heavy Industry Media</span>
+        <h1 class="hero-title" style="color: #FFFFFF; text-shadow: none; font-size: clamp(3.5rem, 6vw, 4.5rem); font-weight: 580;">Documenting Heavy Industries at Scale</h1>
+        <p class="hero-subtitle" style="color: rgba(255,255,255,0.9); font-weight: 480;">High-fidelity photography mapping heavy manufacturing floors, deep civil infrastructure works, and utility-scale energy grids with strict safety certifications.</p>
+        <div style="display: flex; gap: 1.5rem; justify-content: center; padding-bottom: 3rem; flex-wrap: wrap;">
+          <a href="services.html" class="btn btn-secondary"
+            style="background: rgba(255,255,255,0.12); color: #FFFFFF; border-color: rgba(255,255,255,0.35); font-size: 1rem; padding: 1rem 2.25rem;">Explore Sectors</a>
+          <a href="contact.html" class="btn btn-primary"
+            style="font-size: 1rem; padding: 1rem 2.25rem;">Request Proposal</a>
+        </div>
+        <!-- Trust badges -->
+        <div style="display: flex; gap: 2.5rem; flex-wrap: wrap; justify-content: center;">
+          <div
+            style="display: flex; align-items: center; gap: 0.6rem; color: rgba(255,255,255,0.8); font-size: 0.9rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+            <span>OSHA-30 Certified</span>
+          </div>
+          <div
+            style="display: flex; align-items: center; gap: 0.6rem; color: rgba(255,255,255,0.8); font-size: 0.9rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+            <span>TWIC Card Access</span>
+          </div>
+          <div
+            style="display: flex; align-items: center; gap: 0.6rem; color: rgba(255,255,255,0.8); font-size: 0.9rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+            <span>$5M Commercial Liability</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: HOW IT WORKS -->
+  <section class="section"
+    style="padding: 2.5rem 0; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <span class="badge">Workflow Pipeline</span>
+        <h2 style="font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 540; margin-top: 0.75rem;">Site Scouting to Delivery in 4 Steps</h2>
+      </div>
+      <div class="stack-on-mobile"
+        style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative;">
+        <div class="desktop-only"
+          style="position: absolute; top: 32px; left: 12.5%; right: 12.5%; height: 2px; background: var(--border-color); z-index: 0;">
+        </div>
+        <div style="text-align: center; padding: 0 1.5rem; position: relative; z-index: 1;">
+          <div
+            style="width: 64px; height: 64px; background: var(--premium-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto; font-size: 1.5rem; font-weight: 700; color: #fff;">
+            01</div>
+          <h3 style="font-size: 1.2rem; font-weight: 520; margin-bottom: 0.5rem;">Safety</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Site layout, safety induction & TWIC clearance coordination.</p>
+        </div>
+        <div style="text-align: center; padding: 0 1.5rem; position: relative; z-index: 1;">
+          <div
+            style="width: 64px; height: 64px; background: var(--premium-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto; font-size: 1.5rem; font-weight: 700; color: #fff;">
+            02</div>
+          <h3 style="font-size: 1.2rem; font-weight: 520; margin-bottom: 0.5rem;">Logistics Brief</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Shot list map, shift schedule coordination & airspace permits.</p>
+        </div>
+        <div style="text-align: center; padding: 0 1.5rem; position: relative; z-index: 1;">
+          <div
+            style="width: 64px; height: 64px; background: var(--premium-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto; font-size: 1.5rem; font-weight: 700; color: #fff;">
+            03</div>
+          <h3 style="font-size: 1.2rem; font-weight: 520; margin-bottom: 0.5rem;">OSHA Shoot</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Ground and FAA Part 107 drone capture with full safety PPE.</p>
+        </div>
+        <div style="text-align: center; padding: 0 1.5rem; position: relative; z-index: 1;">
+          <div
+            style="width: 64px; height: 64px; background: var(--premium-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto; font-size: 1.5rem; font-weight: 700; color: #fff;">
+            04</div>
+          <h3 style="font-size: 1.2rem; font-weight: 520; margin-bottom: 0.5rem;">License</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Secure cloud delivery & marketing/PR licensing releases.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: HEAVY ASSET SERVICE CARDS -->
+  <section class="section" id="services-preview">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Sectors I Serve</span>
+        <h2 class="section-title">Sectors I Serve</h2>
+        <p class="section-subtitle">Specially engineered layouts, high-dynamic grading, and on-site coordinates mapping for heavy machinery workshops, civil works, and utility-scale energy complexes.</p>
+      </div>
+      <div class="cards-grid tab-full-width">
+        <!-- Card 1 -->
+        <div class="premium-card">
+          <div class="card-img-wrapper">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUebbZZkP-7-87vLZR87ccDvwF0s4F99Ewz7k9ZLepHL5tySp4ZnYJa28&s=10"
+              alt="Robotic automated manufacturing arm welding with bright orange sparks">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Heavy Production Area</h3>
+            <p class="card-desc">Detailed captures inside automated assembly lines, smelting operations, and fabrication bays, highlighting equipment scale and worker processes.</p>
+            <ul class="card-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>OSHA-compliant ground operations</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>High-temperature spark protection gear</span>
+              </li>
+            </ul>
+            <a href="services.html" class="btn btn-accent card-cta">Explore Manufacturing</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="premium-card">
+          <div class="card-img-wrapper">
+            <img src="https://thehill.com/wp-content/uploads/sites/2/2018/04/highway_construction_04062018_1.jpg?w=1280"
+              alt="Heavy crane lifting infrastructure beams on suspension bridge project site at golden hour">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Public Infrastructure Works</h3>
+            <p class="card-desc">Comprehensive progress tracking for bridge riggings, highway expansions, harbor lock developments, and tower cranes at dramatic elevations.</p>
+            <ul class="card-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>High-altitude harness operations</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Phase-by-phase engineering records</span>
+              </li>
+            </ul>
+            <a href="services.html" class="btn btn-accent card-cta">Explore Infrastructure</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="premium-card">
+          <div class="card-img-wrapper">
+            <img src="https://ias.ieee.org/wp-content/uploads/2023/05/Industrial-Power-Converter-Committee.jpg"
+              alt="Wind turbines spinning on rural hillside at sunset sunset">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Industrial Power Systems</h3>
+            <p class="card-desc">Cinematic landscape photography of wind farms, solar fields, utility grids, and substations mapping infrastructure scale for public bid submissions.</p>
+            <ul class="card-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>FAA Part 107 authorized drone surveys</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>High-voltage facility clearances</span>
+              </li>
+            </ul>
+            <a href="services.html" class="btn btn-accent card-cta">Explore Energy</a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="premium-card">
+          <div class="card-img-wrapper">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkvTzy8ue8vh0WAMGz0xxGRZQkatDQdDBD3bq8TeLgLa-p9YaF5D54NsIi&s=10"
+              alt="High-contrast container cargo terminal shipping yard with crane structures">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Logistics &amp; Maritime Ports</h3>
+            <p class="card-desc">High-contrast captures of container terminals, shipping yards, freight transit networks, and dock operations mapping port capacity.</p>
+            <ul class="card-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Airspace-cleared drone flight sequences</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>High-visibility port logistics tracking</span>
+              </li>
+            </ul>
+            <a href="services.html" class="btn btn-accent card-cta">Explore Logistics</a>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="premium-card">
+          <div class="card-img-wrapper">
+            <img src="https://static.vecteezy.com/system/resources/previews/060/032/042/non_2x/heavy-machinery-operates-in-a-quarry-digging-into-the-earth-to-extract-minerals-the-site-is-defined-by-steep-rock-walls-under-cloudy-skies-showcasing-the-mining-process-photo.jpg"
+              alt="Massive excavation construction vehicle moving heavy earth on-site">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Quarry &amp; Heavy Excavation</h3>
+            <p class="card-desc">Rugged, detail-oriented ground and aerial documentation of surface mines, quarry operations, and massive excavation machinery.</p>
+            <ul class="card-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Explosive zone safety protocols</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Dust-resistant sealed camera rigs</span>
+              </li>
+            </ul>
+            <a href="services.html" class="btn btn-accent card-cta">Explore Excavation</a>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="premium-card">
+          <div class="card-img-wrapper">
+            <img src="https://bryanconstruction.com/wp-content/uploads/2025/08/AdobeStock_277547100.png"
+              alt="High tech cleanroom industrial facility showing complex installation systems">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Aerospace &amp; Tech Facilities</h3>
+            <p class="card-desc">Secure documentation of cleanrooms, assembly facilities, aircraft hangars, and testing grounds with full security clearance.</p>
+            <ul class="card-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Secure facility NDA coordination</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Zero-dust cleanroom camera prep</span>
+              </li>
+            </ul>
+            <a href="services.html" class="btn btn-accent card-cta">Explore Aerospace</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: ROI & CPM IMPACT -->
+  <section class="section" id="roi-section"
+    style="background: var(--bg-card); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="stack-on-mobile"
+        style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;">
+        <div class="proposal-text-wrapper">
+          <span class="badge">Proposal Impact</span>
+          <h2 style="font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 540; margin-bottom: 1.5rem; line-height: 1.2;">Custom Images Win Proposal Bids</h2>
+          <p style="color: var(--text-muted); margin-bottom: 2rem; line-height: 1.75;">Reports across engineering and construction fields confirm that custom, high-fidelity site photography increases bid success compared to generic stock imagery.</p>
+          <div style="display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 2.5rem;">
+            <div>
+              <div
+                style="display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 550; margin-bottom: 0.35rem;">
+                <span>Custom Site Photography (Indus Photo)</span><span style="color: var(--success); font-weight: 600;">+45% Win Rate</span>
+              </div>
+              <div
+                style="width: 100%; height: 14px; background: var(--border-color); border-radius: 4px; overflow: hidden;">
+                <div style="width: 95%; height: 100%; background: var(--premium-gradient);"></div>
+              </div>
+            </div>
+            <div>
+              <div
+                style="display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 550; margin-bottom: 0.35rem;">
+                <span>High-End Stock Packages</span><span>+15% Win Rate</span>
+              </div>
+              <div
+                style="width: 100%; height: 14px; background: var(--border-color); border-radius: 4px; overflow: hidden;">
+                <div style="width: 45%; height: 100%; background: var(--accent); opacity: 0.5;"></div>
+              </div>
+            </div>
+            <div>
+              <div
+                style="display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 550; margin-bottom: 0.35rem;">
+                <span>Standard Smartphone Site Shots</span><span>+5% Win Rate</span>
+              </div>
+              <div
+                style="width: 100%; height: 14px; background: var(--border-color); border-radius: 4px; overflow: hidden;">
+                <div style="width: 25%; height: 100%; background: var(--accent); opacity: 0.25;"></div>
+              </div>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Book Site Scouting &rarr;</a>
+        </div>
+        <div class="stack-on-mobile" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+          <div
+            style="text-align: center; padding: 2.5rem 1.5rem; background: var(--premium-gradient); border-radius: var(--radius-md); color: #fff;">
+            <div style="font-size: 2.75rem; font-weight: 680; margin-bottom: 0.5rem;">150+</div>
+            <p style="font-size: 0.85rem; opacity: 0.9; font-weight: 500;">Heavy Sites Photographed</p>
+          </div>
+          <div
+            style="text-align: center; padding: 2.5rem 1.5rem; background: var(--bg-main); border: 1px solid var(--border-color); border-radius: var(--radius-md);">
+            <div style="font-size: 2.75rem; font-weight: 680; margin-bottom: 0.5rem;">100%</div>
+            <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">OSHA Safety Compliance</p>
+          </div>
+          <div
+            style="text-align: center; padding: 2.5rem 1.5rem; background: var(--bg-main); border: 1px solid var(--border-color); border-radius: var(--radius-md);">
+            <div style="font-size: 2.75rem; font-weight: 680; margin-bottom: 0.5rem;">12+ Yrs</div>
+            <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">On-Site Experience</p>
+          </div>
+          <div
+            style="text-align: center; padding: 2.5rem 1.5rem; background: var(--premium-gradient); border-radius: var(--radius-md); color: #fff;">
+            <div style="font-size: 2.75rem; font-weight: 680; margin-bottom: 0.5rem;">$5M</div>
+            <p style="font-size: 0.85rem; opacity: 0.9; font-weight: 500;">Liability Insurance COI</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: MATERIAL PARTNERS -->
+  <section class="section" id="standard-compliance">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Standard Compliance</span>
+        <h2 class="section-title">Technical Standards I Follow</h2>
+        <p class="section-subtitle">I deploy certified systems, FAA authorized drone flights, and color-accurate workflows to supply newsroom and engineering grade deliverables.</p>
+      </div>
+      <div class="stack-on-mobile"
+        style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; margin-bottom: 4rem;">
+        <div class="premium-card">
+          <div class="card-body" style="padding: 2.5rem;">
+            <div class="compliance-img-wrapper">
+              <img src="images/compliance_sony.png" alt="Sony Alpha 7R V Systems">
+            </div>
+            <h3 style="font-size: 1.2rem; font-weight: 560; margin-bottom: 0.75rem; color: var(--accent);">Sony Alpha 7R V Systems</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.7;">61-megapixel full-frame capture capturing minute structural details, welding textures, and scale coordinates for proposal bids.</p>
+          </div>
+        </div>
+        <div class="premium-card">
+          <div class="card-body" style="padding: 2.5rem;">
+            <div class="compliance-img-wrapper">
+              <img src="https://media.licdn.com/dms/image/v2/D4E10AQFHtoInkQN0kA/image-shrink_1280/B4EZwzK7h8GwAk-/0/1770385029572?e=2147483647&v=beta&t=gjiBZ-dOObh33KPFOXqcf9iy4KtV4lIlZfNTD1Kg5hQ" alt="FAA Part 107 Operations">
+            </div>
+            <h3 style="font-size: 1.2rem; font-weight: 560; margin-bottom: 0.75rem; color: var(--accent);">FAA Part 107 Operations</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.7;">Licensed drone operations. Airspace waivers (LAANC) coordinated with airport control tower grids for infrastructure surveying.</p>
+          </div>
+        </div>
+        <div class="premium-card">
+          <div class="card-body" style="padding: 2.5rem;">
+            <div class="compliance-img-wrapper">
+              <img src="images/compliance_color.png" alt="Calibrated Color Grading">
+            </div>
+            <h3 style="font-size: 1.2rem; font-weight: 560; margin-bottom: 0.75rem; color: var(--accent);">Calibrated Color Grading</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.7;">Eizo display hardware calibration and post-processing profiles designed to align color structures for print and corporate PR media.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- SECTION 6: CLIENT TESTIMONIALS -->
+  <section class="section" id="client-testimonials" style="background: var(--bg-main); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); position: relative; overflow: hidden;">
+    <div
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--premium-gradient); opacity: 0.04;">
+    </div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="section-header">
+        <span class="badge">Client Voices</span>
+        <h2 class="section-title">What Clients Say</h2>
+        <p class="section-subtitle">Trusted by engineering agencies, utility operators, civil contractors, and corporate PR teams nationwide.</p>
+      </div>
+      <div class="stack-on-mobile" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+        <div class="premium-card">
+          <div class="card-body" style="padding: 2.5rem;">
+            <div style="display: flex; gap: 0.2rem; color: #F59E0B; margin-bottom: 1.25rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+            </div>
+            <p
+              style="font-style: italic; color: var(--text-muted); margin-bottom: 1.75rem; font-size: 0.95rem; line-height: 1.8;">
+              "Indus Photo managed our bridge construction phase documentation safely and efficiently. The 61MP details in the structural records were crucial for our engineering audits. Outstanding work."</p>
+            <div style="display: flex; align-items: center; gap: 1rem; margin-top: auto;">
+              <img src="images/client_robert.png"
+                alt="Robert Caulfield" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+              <div style="display: flex; align-items: baseline; gap: 0.5rem; flex-wrap: wrap;">
+                <h4 style="font-size: 1rem; font-weight: 550;">Robert Caulfield</h4>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">PM, Caulfield Infrastructure</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="premium-card">
+          <div class="card-body" style="padding: 2.5rem; display: flex; flex-direction: column;">
+            <div style="display: flex; gap: 0.2rem; color: #F59E0B; margin-bottom: 1.25rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+            </div>
+            <p
+              style="font-style: italic; color: var(--text-muted); margin-bottom: 1.75rem; font-size: 0.95rem; line-height: 1.8;">
+              "We required close coordination with air traffic control for our drone mapping. Indus Photo handled the airport airspace clearances and delivered panoramic visual briefs that won us the county contract."</p>
+            <div style="display: flex; align-items: center; gap: 1rem; margin-top: auto;">
+              <img src="images/client_amara.png"
+                alt="Amara Osei" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+              <div style="display: flex; align-items: baseline; gap: 0.5rem; flex-wrap: wrap;">
+                <h4 style="font-size: 1rem; font-weight: 550;">Amara Osei</h4>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">PR Director, Great Lakes Grid</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="premium-card">
+          <div class="card-body" style="padding: 2.5rem; display: flex; flex-direction: column;">
+            <div style="display: flex; gap: 0.25rem; color: #F59E0B; margin-bottom: 1.25rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+            </div>
+            <p
+              style="font-style: italic; color: var(--text-muted); margin-bottom: 1.75rem; font-size: 0.95rem; line-height: 1.8;">
+              "We've booked Indus Photo for three turbine facility shoot updates. The safety integration is flawless, and the resulting color-graded assets represent our site operations with cinematic scale."</p>
+            <div style="display: flex; align-items: center; gap: 1rem; margin-top: auto;">
+              <img src="https://media.licdn.com/dms/image/v2/D5603AQEy4feqn3BY-Q/profile-displayphoto-scale_400_400/B56Z2QhxbGIsAg-/0/1776246267735?e=2147483647&v=beta&t=qzMCHLEggtnw5dmu5Y3rdYPZeDLd2UbNAasZhFZqSG8"
+                alt="Tony Vásquez" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+              <div style="display: flex; align-items: baseline; gap: 0.5rem; flex-wrap: wrap;">
+                <h4 style="font-size: 1rem; font-weight: 550;">Tony Vasquez</h4>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">VP of Operations, Apex Heavy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 3.5rem; padding-bottom: 2rem;">
+        <a href="contact.html" class="btn btn-primary" style="font-size: 1rem;">Book Site Scouting Today</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">I</div>
+            <div class="logo-text">Indus Photo<span>.</span></div>
+          </a>
+          <p class="footer-desc">Cinematic heavy industry, energy sector, and infrastructure project photography for engineering contractors and media teams.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn brand-linkedin" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="#" class="social-btn brand-facebook" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-btn brand-twitter" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" class="social-btn brand-instagram" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About Me</a></li>
+            <li><a href="process.html" class="footer-link">My Process</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+            <li><a href="about.html#faq" class="footer-link">FAQs</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Sectors</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Manufacturing</a></li>
+            <li><a href="services.html" class="footer-link">Infrastructure</a></li>
+            <li><a href="services.html" class="footer-link">Energy & Utilities</a></li>
+            <li><a href="services.html" class="footer-link">Drone Operations</a></li>
+            <li><a href="services.html" class="footer-link">Corporate Portraits</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Contact Studio</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>700 Steel Boulevard, Suite 100, Pittsburgh, PA 15222</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            <span>(800) 555-PHOT</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>contact@indusphoto.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Indus Photo. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top Button -->
+  <button id="scroll-top" class="scroll-top-btn" aria-label="Scroll to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Script JS Link -->
+  <script src="main.js"></script>
+</body>
+
+</html>

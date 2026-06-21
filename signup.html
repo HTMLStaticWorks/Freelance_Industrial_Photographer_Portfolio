@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Log In | Indus Photo</title>
-  <meta name="description"
-    content="Log in to your Indus Photo account to manage your industrial photography projects, shoot schedules, and digital assets.">
+  <title>Sign Up | Indus Photo</title>
+  <meta name="description" content="Create your Indus Photo account to submit site photography specifications, manage proposals, and access licensing portals.">
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="stylesheet" href="styles.css">
   <style>
@@ -139,27 +138,19 @@
       left: 1rem;
     }
 
-    .remember-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 1.5rem;
+    .strength-bar {
+      height: 4px;
+      border-radius: 2px;
+      background: var(--border-color);
+      margin-top: 0.4rem;
+      overflow: hidden;
     }
 
-    .remember-label {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      font-size: 0.88rem;
-      color: var(--text-muted);
-      cursor: pointer;
-    }
-
-    .remember-label input {
-      accent-color: var(--accent);
-      cursor: pointer;
-      width: 16px;
-      height: 16px;
+    .strength-fill {
+      height: 100%;
+      border-radius: 2px;
+      transition: width 0.3s ease, background 0.3s ease;
+      width: 0%;
     }
 
     /* Hover gives underline */
@@ -193,29 +184,6 @@
     html[dir="rtl"] .top-controls {
       right: auto;
       left: 1.5rem;
-    }
-
-    /* Shake animation for wrong credentials */
-    @keyframes shake {
-
-      0%,
-      100% {
-        transform: translateX(0);
-      }
-
-      20%,
-      60% {
-        transform: translateX(-8px);
-      }
-
-      40%,
-      80% {
-        transform: translateX(8px);
-      }
-    }
-
-    .shake {
-      animation: shake 0.4s ease;
     }
 
     @media (max-width: 560px) {
@@ -258,7 +226,7 @@
     </button>
   </div>
 
-  <!-- LOGIN PAGE -->
+  <!-- SIGN UP FORM PAGE -->
   <div class="auth-page">
     <div class="auth-card">
 
@@ -268,30 +236,57 @@
           <div class="logo-icon">I</div>
           <div class="logo-text">Indus Photo<span>.</span></div>
         </a>
-        <h1 style="font-size: 1.75rem; margin-bottom: 0.4rem; font-weight: 520;">Log In to Your Account</h1>
-        <p style="color: var(--text-muted); font-size: 0.9rem;">Manage your project files and photo shoots.</p>
+        <h1 style="font-size: 1.75rem; margin-bottom: 0.4rem; font-weight: 520;">Create Your Account</h1>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">Start your custom industrial project briefing today.</p>
       </div>
 
       <!-- Error Message Banner -->
-      <div class="error-msg" id="error-msg">
-        ⚠ Incorrect email or password. Please try again.
-      </div>
+      <div class="error-msg" id="error-msg"></div>
 
-      <!-- Login Form -->
-      <form id="login-form" onsubmit="handleLogin(event)">
+      <!-- Registration Form -->
+      <form id="signup-form" onsubmit="handleSignup(event)">
 
-        <!-- Email Address -->
+        <!-- Full Name -->
         <div class="auth-input-group">
-          <label for="login-email">Email Address</label>
-          <input type="email" id="login-email" class="auth-input" placeholder="" required>
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" class="auth-input" placeholder="" required>
+        </div>
+
+        <!-- Business Email -->
+        <div class="auth-input-group">
+          <label for="email">Business Email</label>
+          <input type="email" id="email" class="auth-input" placeholder="" required>
         </div>
 
         <!-- Password -->
         <div class="auth-input-group">
-          <label for="login-password">Password</label>
+          <label for="password">Password</label>
           <div class="password-wrapper">
-            <input type="password" id="login-password" class="auth-input" placeholder="" required>
-            <button type="button" class="password-toggle" onclick="togglePwd(this)" aria-label="Toggle password">
+            <input type="password" id="password" class="auth-input" placeholder="" required
+              oninput="checkStrength(this.value)">
+            <button type="button" class="password-toggle" onclick="togglePassword('password', this)"
+              aria-label="Toggle password">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </button>
+          </div>
+          <!-- Strength Bar Elements -->
+          <div class="strength-bar">
+            <div id="strength-fill" class="strength-fill"></div>
+          </div>
+          <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.3rem;" id="strength-label"></p>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="auth-input-group">
+          <label for="confirm-password">Confirm Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="confirm-password" class="auth-input" placeholder=""
+              required>
+            <button type="button" class="password-toggle" onclick="togglePassword('confirm-password', this)"
+              aria-label="Toggle password">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
                 <circle cx="12" cy="12" r="3" />
@@ -300,18 +295,20 @@
           </div>
         </div>
 
-        <!-- Remember me and Forgot password -->
-        <div class="remember-row">
-          <label class="remember-label">
-            <input type="checkbox" id="remember"> Remember me
+        <!-- Terms and Conditions -->
+        <div style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1.5rem;">
+          <input type="checkbox" id="agree-terms" required
+            style="margin-top: 3px; accent-color: var(--accent); width: 16px; height: 16px; cursor: pointer;">
+          <label for="agree-terms"
+            style="font-size: 0.85rem; color: var(--text-muted); cursor: pointer; line-height: 1.5;">
+            I agree to Indus Photo's <a href="#" class="hover-underline" style="color: var(--accent);">Terms of Service</a> and <a href="#" class="hover-underline" style="color: var(--accent);">Privacy Policy</a>
           </label>
-          <a href="#" class="hover-underline" style="font-size: 0.88rem; color: var(--accent); font-weight: 500;">Forgot password?</a>
         </div>
 
         <!-- Submit Button -->
-        <button type="submit" id="login-btn" class="btn btn-primary"
+        <button type="submit" class="btn btn-primary"
           style="width: 100%; font-size: 1rem; padding: 1rem; margin-bottom: 0.5rem;">
-          Log In
+          Create Account
         </button>
       </form>
 
@@ -343,8 +340,8 @@
       </div>
 
       <p style="text-align: center; margin-top: 1.75rem; font-size: 0.9rem; color: var(--text-muted);">
-        Don't have an account? <a href="signup.html" class="hover-underline"
-          style="color: var(--accent); font-weight: 500;">Sign up free</a>
+        Already have an account? <a href="login.html" class="hover-underline"
+          style="color: var(--accent); font-weight: 540;">Log in here</a>
       </p>
 
     </div>
@@ -352,8 +349,8 @@
 
   <script src="main.js"></script>
   <script>
-    function togglePwd(btn) {
-      const field = btn.previousElementSibling;
+    function togglePassword(fieldId, btn) {
+      const field = document.getElementById(fieldId);
       const isText = field.type === 'text';
       field.type = isText ? 'password' : 'text';
       btn.innerHTML = isText
@@ -361,31 +358,49 @@
         : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24M1 1l22 22"/></svg>';
     }
 
-    function handleLogin(e) {
-      e.preventDefault();
-      const email = document.getElementById('login-email').value;
-      const pass = document.getElementById('login-password').value;
-      const btn = document.getElementById('login-btn');
-      const err = document.getElementById('error-msg');
+    function checkStrength(val) {
+      const fill = document.getElementById('strength-fill');
+      const label = document.getElementById('strength-label');
+      let score = 0;
+      if (val.length >= 8) score++;
+      if (/[A-Z]/.test(val)) score++;
+      if (/[0-9]/.test(val)) score++;
+      if (/[^A-Za-z0-9]/.test(val)) score++;
+      const configs = [
+        { w: '0%', c: 'transparent', t: '' },
+        { w: '25%', c: '#EF4444', t: 'Weak' },
+        { w: '50%', c: '#F59E0B', t: 'Fair' },
+        { w: '75%', c: '#3B82F6', t: 'Good' },
+        { w: '100%', c: '#10B981', t: 'Strong' },
+      ];
+      fill.style.width = configs[score].w;
+      fill.style.background = configs[score].c;
+      label.textContent = configs[score].t;
+      label.style.color = configs[score].c;
+    }
 
-      btn.textContent = 'Logging in…';
+    function handleSignup(e) {
+      e.preventDefault();
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirm-password').value;
+      const errorMsg = document.getElementById('error-msg');
+
+      if (password !== confirmPassword) {
+        errorMsg.textContent = '⚠ Passwords do not match. Please verify and try again.';
+        errorMsg.style.display = 'block';
+        return;
+      }
+
+      errorMsg.style.display = 'none';
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.textContent = 'Creating your account…';
       btn.disabled = true;
-      err.style.display = 'none';
 
       setTimeout(() => {
-        // Authenticate successfully for any input to make development/testing simple and convenient
-        if (email && pass) {
-          btn.innerHTML = '✓ Welcome back! Redirecting…';
-          btn.style.background = '#10B981';
-          setTimeout(() => { window.location.href = 'index.html'; }, 1200);
-        } else {
-          err.style.display = 'block';
-          document.getElementById('login-form').classList.add('shake');
-          setTimeout(() => document.getElementById('login-form').classList.remove('shake'), 400);
-          btn.textContent = 'Log In';
-          btn.disabled = false;
-        }
-      }, 1200);
+        btn.innerHTML = '✓ Account Created! Redirecting…';
+        btn.style.background = '#10B981';
+        setTimeout(() => { window.location.href = 'index.html'; }, 1500);
+      }, 1800);
     }
   </script>
 </body>

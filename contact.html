@@ -1,337 +1,350 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact & Inquiries — Restore Vintage Watch Restoration</title>
-    <meta name="description"
-        content="Request a restoration quote. Contact our master watchmakers for a heritage restoration assessment.">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;600&display=swap"
-        rel="stylesheet">
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- CSS -->
-    <link rel="stylesheet" href="index.css">
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Inquiry & Booking | Indus Photo</title>
+  <meta name="description" content="Inquire about industrial photography services for heavy manufacturing, energy sector, drone surveys, and infrastructure projects. Request a custom quote.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Project Inquiry & Booking | Indus Photo">
+  <meta property="og:description" content="Request a project booking or site photography quote from Indus Photo. TWIC cardholder & OSHA safety-compliant.">
+  <meta property="og:image" content="images/hero_industrial.png">
+  <meta property="og:type" content="website">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo"><i class="fas fa-clock" style="margin-right: 10px;"></i>RESTORE</a>
-
-            <ul class="nav-links">
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="story.html">Home 2 </a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="process.html">Process</a></li>
-                <li><a href="journal.html">Journal</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-                <!-- Mobile Actions -->
-                <li class="nav-actions-mobile">
-                    <button class="toggle-btn rtl-toggle" title="Toggle RTL"
-                        style="color: white; font-family: 'Cinzel', serif; font-size: 0.8rem; margin-bottom: 1rem;">
-                        <i class="fas fa-exchange-alt"></i> Toggle RTL
-                    </button>
-                    <button class="toggle-btn theme-toggle" title="Toggle Theme"
-                        style="color: white; font-family: 'Cinzel', serif; font-size: 0.8rem;">
-                        <i class="fas fa-moon"></i> Theme Mode
-                    </button>
-                </li>
-            </ul>
-
-            <div class="nav-actions">
-                <button class="toggle-btn rtl-toggle" title="Toggle RTL">
-                    <i class="fas fa-exchange-alt"></i>
-                    <span class="rtl-toggle-text"
-                        style="font-size: 0.7rem; margin-left: 5px; font-family: 'Cinzel', serif;">RTL</span>
-                </button>
-                <button class="toggle-btn theme-toggle" title="Toggle Theme">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <a href="login.html" class="btn-login" style="font-family: 'Cinzel', serif;">Login</a>
-            </div>
-
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+  <!-- HEADER -->
+  <header class="header sticky" id="header" style="background: var(--bg-header); border-bottom: 1px solid rgba(255,255,255,0.12);">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">I</div>
+        <div class="logo-text">Indus Photo<span>.</span></div>
+      </a>
+      <nav class="nav" id="nav-menu">
+        <div class="nav-dropdown desktop-only">
+          <a href="#" class="nav-link dropdown-toggle" id="nav-home">Home <svg class="dropdown-arrow" width="10"
+              height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M1 1L5 5L9 1" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></a>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-item">Home 1</a>
+            <a href="index2.html" class="dropdown-item">Home 2</a>
+          </div>
         </div>
-    </nav>
+        <a href="index.html" class="nav-link mobile-only" id="nav-home1-mob">Home 1</a>
+        <a href="index2.html" class="nav-link mobile-only" id="nav-home2-mob">Home 2</a>
+        <a href="about.html" class="nav-link" id="nav-about">About Me</a>
+        <a href="services.html" class="nav-link" id="nav-services">Sectors</a>
+        <a href="portfolio.html" class="nav-link" id="nav-portfolio">Portfolio</a>
+        <a href="process.html" class="nav-link" id="nav-process">Process</a>
+        <a href="contact.html" class="nav-link active" id="nav-contact">Contact</a>
+        <a href="login.html" class="nav-link mobile-only login-mobile-btn" id="nav-login-mob">Login</a>
+      </nav>
+      <div class="header-actions">
+        <button id="rtl-toggle" class="theme-toggle" aria-label="Toggle Layout Direction" style="font-size: 0.85rem; font-weight: 500;">RTL</button>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+        <a href="login.html" class="btn btn-primary desktop-only" style="padding: 0.6rem 1.25rem; font-size: 0.9rem;">Login</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <svg class="hamburger-close-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero-section">
-        <div class="hero-blurred-bg" style="background-image: url('https://images.squarespace-cdn.com/content/v1/627b2795b8e70b00cc6e04ac/d50d3fa1-0579-43b2-81c1-0adb92a2aeeb/176-ESPERLUXE_DAVIDOFF_HR84__40jamesncx-121A6474%2Bcopy.jpg');"></div>
-        <div class="hero-overlay"></div>
+  <!-- INNER PAGE HERO -->
+  <section class="section" style="padding-top: 10rem; padding-bottom: 5rem; background: var(--primary); color: #FFFFFF; position: relative;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--premium-gradient); opacity: 0.05;"></div>
+    <div class="container" style="position: relative; z-index: 2; text-align: center;">
+      <span class="badge" style="background: rgba(255,255,255,0.1); color: #FFFFFF; border-color: rgba(255,255,255,0.2);">Project Planning</span>
+      <h1 style="color: #FFFFFF; font-size: clamp(3.5rem, 6vw, 4.5rem); margin-bottom: 1rem;">Project Inquiry</h1>
+      <p class="lead-text" style="color: rgba(248, 250, 252, 0.8); max-width: 700px; margin: 0 auto;">Coordinate site logistics, check safety access requirements, and request a detailed photo brief proposal.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT LAYOUT SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
         
-        <div class="container text-center">
-            <span class="eyebrow">The First Step</span>
-            <h1 class="italic">Restoration Inquiries</h1>
-            <p>Submit your timepiece details below to begin the assessment process. Our team will review your inquiry and respond with a tailored restoration roadmap.</p>
-        </div>
-    </section>
+        <!-- Contact details -->
+        <div class="contact-info-panel">
+          <div style="text-align: center;">
+            <span class="badge">Direct Channels</span>
+            <h2 style="font-size: clamp(2rem, 3.5vw, 2.5rem); margin-bottom: 1.5rem;">Reach Out Directly</h2>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">For scheduling emergencies or to verify liability insurance bounds before requesting a proposal, contact the Pittsburgh studio office directly.</p>
+          </div>
 
-    <!-- CONTACT FORM & INFO -->
-    <section class="section">
-        <div class="container">
-            <div class="grid grid-2" style="position: relative;">
-
-                <!-- Inquiry Form -->
-                <div class="contact-form reveal"
-                    style="background: var(--bg-light); border: 1px solid var(--border); border-top: 5px solid var(--secondary); box-shadow: var(--shadow);">
-                    <h2 style="font-size: 1.8rem; margin-bottom: 2rem;">Restoration Details</h2>
-                    <form id="restoration-form" style="display: flex; flex-direction: column; gap: 1.5rem;">
-                        <div class="form-group grid grid-2">
-                            <div style="display: flex; flex-direction: column;">
-                                <label
-                                    style="font-family: 'Cinzel', serif; font-size: 0.75rem; margin-bottom: 0.5rem;">Watch
-                                    Brand</label>
-                                <input type="text" placeholder="e.g. Rolex, Omega, IWC"
-                                    style="padding: 12px; border: 1px solid var(--border); border-radius: 4px; background: transparent; width: 100%;"
-                                    required>
-                            </div>
-                            <div style="display: flex; flex-direction: column;">
-                                <label
-                                    style="font-family: 'Cinzel', serif; font-size: 0.75rem; margin-bottom: 0.5rem;">Model
-                                    / Reference</label>
-                                <input type="text" placeholder="e.g. Submariner 5513"
-                                    style="padding: 12px; border: 1px solid var(--border); border-radius: 4px; background: transparent; width: 100%;"
-                                    required>
-                            </div>
-                        </div>
-                        <div class="form-group grid grid-2">
-                            <div style="display: flex; flex-direction: column;">
-                                <label
-                                    style="font-family: 'Cinzel', serif; font-size: 0.75rem; margin-bottom: 0.5rem;">Approximate
-                                    Year</label>
-                                <input type="number" placeholder="e.g. 1965"
-                                    style="padding: 12px; border: 1px solid var(--border); border-radius: 4px; background: transparent; width: 100%;">
-                            </div>
-                            <div style="display: flex; flex-direction: column;">
-                                <label
-                                    style="font-family: 'Cinzel', serif; font-size: 0.75rem; margin-bottom: 0.5rem;">Service
-                                    Requested</label>
-                                <select
-                                    style="padding: 12px; border: 1px solid var(--border); border-radius: 4px; background: transparent; width: 100%;">
-                                    <option>Essential Service</option>
-                                    <option selected>Full Overhaul</option>
-                                    <option>Museum Restoration</option>
-                                    <option>Movement Only</option>
-                                    <option>Unsure / Needs Assessment</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div style="display: flex; flex-direction: column;">
-                            <label
-                                style="font-family: 'Cinzel', serif; font-size: 0.75rem; margin-bottom: 0.5rem;">Condition
-                                Description</label>
-                            <textarea placeholder="Tell us about the watch's current state, known issues, or history..."
-                                style="padding: 12px; border: 1px solid var(--border); border-radius: 4px; height: 120px; background: transparent; width: 100%;"></textarea>
-                        </div>
-
-                        <hr style="border: 0; border-top: 1px solid var(--border); margin: 1rem 0;">
-
-                        <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Contact Information</h2>
-                        <div class="form-group grid grid-2">
-                            <div style="display: flex; flex-direction: column;">
-                                <label
-                                    style="font-family: 'Cinzel', serif; font-size: 0.75rem; margin-bottom: 0.5rem;">Full
-                                    Name</label>
-                                <input type="text"
-                                    style="padding: 12px; border: 1px solid var(--border); border-radius: 4px; background: transparent; width: 100%;"
-                                    required>
-                            </div>
-                            <div style="display: flex; flex-direction: column;">
-                                <label
-                                    style="font-family: 'Cinzel', serif; font-size: 0.75rem; margin-bottom: 0.5rem;">Email
-                                    Address</label>
-                                <input type="email"
-                                    style="padding: 12px; border: 1px solid var(--border); border-radius: 4px; background: transparent; width: 100%;"
-                                    required>
-                            </div>
-                        </div>
-                        
-
-                        <button type="submit" class="btn btn-primary" style="margin-top: 1.5rem; width: 100%;">Send
-                            Restoration Inquiry</button>
-                    </form>
-                </div>
-
-                <!-- Workshop Info -->
-                <div class="workshop-info reveal"
-                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; text-align: center; padding: 2rem;">
-                    <span class="eyebrow">The Atelier Location</span>
-                    <h2 style="margin-bottom: 2rem;">Visit our workshop or send via courier</h2>
-
-                    <div class="info-list"
-                        style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
-                        <div class="info-block">
-                            <h4
-                                style="font-family: 'Cinzel', serif; font-size: 1rem; color: var(--secondary); margin-bottom: 0.5rem;">
-                                <i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> Address</h4>
-                            <p style="opacity: 0.8; margin: 0 auto; max-width: 300px;">14 Clockmaker's Lane, Suite
-                                3<br>London, EC1V 2NB, United Kingdom</p>
-                        </div>
-                        <div class="info-block">
-                            <h4
-                                style="font-family: 'Cinzel', serif; font-size: 1rem; color: var(--secondary); margin-bottom: 0.5rem;">
-                                <i class="fas fa-clock" style="margin-right: 10px;"></i> Atelier Hours</h4>
-                            <p style="opacity: 0.8; margin: 0 auto; max-width: 300px;">Mon – Fri: 09:00 —
-                                18:00<br>Saturday: By Private Appointment<br>Sunday: Closed</p>
-                        </div>
-                        <div class="info-block">
-                            <h4
-                                style="font-family: 'Cinzel', serif; font-size: 1rem; color: var(--secondary); margin-bottom: 0.5rem;">
-                                <i class="fas fa-phone-alt" style="margin-right: 10px;"></i> Direct Lines</h4>
-                            <p style="opacity: 0.8; margin: 0 auto; max-width: 300px;">Workshop: (555)
-                                WATCH-01<br>Global Inquiries: +44 20 7946 0123</p>
-                        </div>
-                        <div class="info-block">
-                            <h4
-                                style="font-family: 'Cinzel', serif; font-size: 1rem; color: var(--secondary); margin-bottom: 0.5rem;">
-                                <i class="fas fa-truck-fast" style="margin-right: 10px;"></i> Turnaround Times</h4>
-                            <p style="opacity: 0.8; font-size: 0.9rem; margin: 0 auto; max-width: 300px;">Essential: 2–3
-                                weeks<br>Full Overhaul: 6–8 weeks<br>Museum Grade: Subject to assessment</p>
-                        </div>
-                    </div>
-
-                    <div class="social-links"
-                        style="margin-top: 3rem; display: flex; gap: 1.5rem; justify-content: center;">
-                        <a href="#"><i class="fab fa-instagram"
-                                style="font-size: 1.5rem; color: var(--secondary);"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"
-                                style="font-size: 1.5rem; color: var(--secondary);"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"
-                                style="font-size: 1.5rem; color: var(--secondary);"></i></a>
-                    </div>
-                </div>
-
+          <!-- Items -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
             </div>
-        </div>
-    </section>
-
-    <!-- MAP SECTION -->
-    <section class="section" style="padding: 0;">
-        <div class="map-container reveal"
-            style="width: 100%; height: 450px; background: var(--bg-dark);">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.0203!2d-0.0934!3d51.5234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDMxJzI0LjIiTiAwwrAwNSczNi4yIlc!5e0!3m2!1sen!2suk!4v1654321234567!5m2!1sen!2suk"
-                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col reveal">
-                    <a href="index.html" class="logo" style="display: block; margin-bottom: 1.5rem;"><i
-                            class="fas fa-clock" style="margin-right: 10px;"></i>HORLOGERIE</a>
-                    <p style="font-size: 0.9rem; opacity: 0.7;">Restoring time's treasures since 1987. We specialize in
-                        the preservation and technical restoration of vintage mechanical timepieces from the world's
-                        finest manufactures.</p>
-                    <div class="social-links" style="margin-top: 1.5rem; display: flex; gap: 1rem;">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col reveal" style="transition-delay: 0.1s;">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="story.html">Story</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="process.html">Process</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col reveal" style="transition-delay: 0.2s;">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">Movement Overhaul</a></li>
-                        <li><a href="services.html">Case Restoration</a></li>
-                        <li><a href="services.html">Dial Refinishing</a></li>
-                        <li><a href="services.html">Strap Customization</a></li>
-                        <li><a href="services.html">Assessment</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col reveal" style="transition-delay: 0.3s;">
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--secondary);"></i>
-                            14 Clockmaker's Lane, Suite 3</li>
-                        <li><i class="fas fa-phone" style="margin-right: 10px; color: var(--secondary);"></i> (555)
-                            WATCH-01</li>
-                        <li><i class="fas fa-envelope" style="margin-right: 10px; color: var(--secondary);"></i>
-                            hello@horlogerie-restore.com</li>
-                        <li><i class="fas fa-clock" style="margin-right: 10px; color: var(--secondary);"></i> Mon–Fri
-                            9am–6pm</li>
-                    </ul>
-                </div>
+            <div class="contact-text">
+              <h4 style="font-size: 1.25rem;">Studio Office</h4>
+              <p>700 Steel Boulevard, Suite 100, Pittsburgh, PA 15222</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Horlogerie Watch Restoration. All rights reserved.</p>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
             </div>
+            <div class="contact-text">
+              <h4 style="font-size: 1.25rem;">Phone Hotlines</h4>
+              <p>(800) 555-PHOT | (412) 555-0144</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div class="contact-text">
+              <h4 style="font-size: 1.25rem;">Email Channels</h4>
+              <p>contact@indusphoto.com | media@indusphoto.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            </div>
+            <div class="contact-text">
+              <h4 style="font-size: 1.25rem;">Office Hours</h4>
+              <p>Monday - Friday: 8:00 AM - 6:00 PM EST<br>Saturday & Sunday: By Shoot Scheduling Only</p>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div style="text-align: center;">
+            <h4 style="font-size: 1rem; margin-bottom: 0.5rem; font-weight: 500;">Professional Network</h4>
+            <div class="social-links" style="margin-top: 0; justify-content: center;">
+              <a href="#" class="social-btn brand-linkedin" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+              <a href="#" class="social-btn brand-facebook" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              </a>
+              <a href="#" class="social-btn brand-twitter" aria-label="Twitter">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+              </a>
+              <a href="#" class="social-btn brand-instagram" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- MAP CONTAINER (Aligned left under socials) -->
+          <div class="map-container" style="margin-top: 0;">
+            <!-- Interactive map frame with Pittsburgh coords -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97224.23724213768!2d-80.0505404987083!3d40.44062479958742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f16f48068503%3A0x8df915a15b1ac13d!2sPittsburgh%2C%20PA!5e0!3m2!1sen!2sus!4v1700000000000!2m2!1d-79.9959!2d40.4406" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Indus Photo Pittsburgh Studio Office Map"></iframe>
+          </div>
         </div>
-    </footer>
 
-    <button class="back-to-top" aria-label="Back to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+        <!-- Form & Details -->
+        <div>
+          <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+            <h3 style="font-size: 1.75rem; margin-bottom: 1.5rem; font-weight: 520; color: var(--text-main); text-align: center;">Request a Shoot Proposal</h3>
+            
+            <form id="contact-form">
+              <!-- Basic fields -->
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Full Name</label>
+                <input class="form-control" type="text" id="contact-name" placeholder="Johnathan Miller" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email Address</label>
+                <input class="form-control" type="email" id="contact-email" placeholder="jmiller@sterling-engineering.com" required>
+              </div>
 
-    <script src="main.js"></script>
-    <style>
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-        }
+              <!-- Organization Type Dropdown -->
+              <div class="form-group">
+                <label class="form-label" for="contact-org">Organization Type</label>
+                <select class="form-control" id="contact-org" required style="background-image: none;">
+                  <option value="" disabled selected>Select organization type...</option>
+                  <option value="engineering">Civil Engineering Contractor</option>
+                  <option value="pr-firm">PR & Media Agency</option>
+                  <option value="construction">Construction Operator / Developer</option>
+                  <option value="utility">Energy / Infrastructure Utility</option>
+                  <option value="manufacturing">Heavy Industrial Manufacturer</option>
+                  <option value="other">Other Corporation</option>
+                </select>
+              </div>
 
-        .reveal.revealed {
-            opacity: 1;
-            transform: translateY(0);
-        }
+              <!-- Photography Sectors (Checkboxes) -->
+              <div class="form-group">
+                <label class="form-label">Photography Sector(s)</label>
+                <div style="display: grid; grid-template-columns: 1fr; gap: 0.5rem; margin-top: 0.5rem; padding-left: 0.25rem;">
+                  <label style="display: flex; align-items: center; gap: 0.75rem; cursor: pointer;">
+                    <input type="checkbox" name="sector" value="manufacturing" style="accent-color: var(--accent); width: 1.1rem; height: 1.1rem;">
+                    <span>Heavy Manufacturing</span>
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 0.75rem; cursor: pointer;">
+                    <input type="checkbox" name="sector" value="infrastructure" style="accent-color: var(--accent); width: 1.1rem; height: 1.1rem;">
+                    <span>Infrastructure & Civil</span>
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 0.75rem; cursor: pointer;">
+                    <input type="checkbox" name="sector" value="energy" style="accent-color: var(--accent); width: 1.1rem; height: 1.1rem;">
+                    <span>Energy & Utilities</span>
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 0.75rem; cursor: pointer;">
+                    <input type="checkbox" name="sector" value="drone" style="accent-color: var(--accent); width: 1.1rem; height: 1.1rem;">
+                    <span>Aerial Drone Surveys</span>
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 0.75rem; cursor: pointer;">
+                    <input type="checkbox" name="sector" value="portraits" style="accent-color: var(--accent); width: 1.1rem; height: 1.1rem;">
+                    <span>Executive Portraits</span>
+                  </label>
+                </div>
+              </div>
 
-        @media (max-width: 1024px) {
-            .grid-2 {
-                grid-template-columns: 1fr;
-            }
+              <!-- Site Location & Access -->
+              <div class="form-group">
+                <label class="form-label" for="contact-location">Project Site Location</label>
+                <input class="form-control" type="text" id="contact-location" placeholder="e.g. Beaver Valley Power Station, Shippingport, PA" required>
+              </div>
 
-            .workshop-info {
-                padding-left: 0;
-                margin-top: 4rem;
-                padding-top: 4rem;
-            }
+              <!-- Safety Clearance & PPE (Checkboxes) -->
+              <div class="form-group">
+                <label class="form-label">Safety Clearance & Site Access Rules</label>
+                <div style="display: grid; grid-template-columns: 1fr; gap: 0.5rem; margin-top: 0.5rem; padding-left: 0.25rem;">
+                  <label style="display: flex; align-items: center; gap: 0.75rem; cursor: pointer;">
+                    <input type="checkbox" name="safety" value="osha" style="accent-color: var(--accent); width: 1.1rem; height: 1.1rem;">
+                    <span>OSHA Safety Training required (10-hr or 30-hr)</span>
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 0.75rem; cursor: pointer;">
+                    <input type="checkbox" name="safety" value="twic" style="accent-color: var(--accent); width: 1.1rem; height: 1.1rem;">
+                    <span>TWIC Card (Transportation Worker Identification Credential)</span>
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 0.75rem; cursor: pointer;">
+                    <input type="checkbox" name="safety" value="ppe" style="accent-color: var(--accent); width: 1.1rem; height: 1.1rem;" checked>
+                    <span>Standard PPE (Steel-Toe Boots, Hardhat, High-Viz Vest, Safety Glasses)</span>
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 0.75rem; cursor: pointer;">
+                    <input type="checkbox" name="safety" value="escort" style="accent-color: var(--accent); width: 1.1rem; height: 1.1rem;">
+                    <span>Full-Time Active Escort / Site Induction required</span>
+                  </label>
+                </div>
+              </div>
 
-            .desktop-divider {
-                height: 1px !important;
-                width: 100% !important;
-                top: 0 !important;
-                left: 0 !important;
-            }
-        }
+              <!-- Licensing Rights -->
+              <div class="form-group">
+                <label class="form-label" for="contact-licensing">Intended Media Licensing</label>
+                <select class="form-control" id="contact-licensing" required style="background-image: none;">
+                  <option value="" disabled selected>Select media licensing model...</option>
+                  <option value="buyout">Full Commercial Buyout & Copyright Transfer</option>
+                  <option value="pr-editorial">PR, Marketing & Editorial Usage Rights</option>
+                  <option value="internal">Internal Archives & Corporate Comm Only</option>
+                </select>
+              </div>
 
-        @media (max-width: 768px) {
-            .contact-form {
-                padding: 2rem;
-            }
+              <div class="form-group">
+                <label class="form-label" for="contact-subject">Inquiry Subject</label>
+                <input class="form-control" type="text" id="contact-subject" placeholder="e.g. Infrastructure construction phase documentation proposal" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-message">Detailed Scope / Brief</label>
+                <textarea class="form-control" id="contact-message" rows="4" placeholder="Describe the industrial environment, requested shot lists, scheduling requirements, or PR deadlines..." required></textarea>
+              </div>
+              
+              <button class="btn btn-primary submit-btn" type="submit" style="margin-top: 1rem;">Send Project Brief</button>
+            </form>
+          </div>
+        </div>
 
-            .grid-2 {
-                grid-template-columns: 1fr !important;
-            }
-        }
-    </style>
+      </div>
+
+
+      
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">I</div>
+            <div class="logo-text">Indus Photo<span>.</span></div>
+          </a>
+          <p class="footer-desc">Cinematic heavy industry, energy sector, and infrastructure project photography for engineering contractors and media teams.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn brand-linkedin" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="#" class="social-btn brand-facebook" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-btn brand-twitter" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" class="social-btn brand-instagram" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About Me</a></li>
+            <li><a href="process.html" class="footer-link">My Process</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+            <li><a href="about.html#faq" class="footer-link">FAQs</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Sectors</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Manufacturing</a></li>
+            <li><a href="services.html" class="footer-link">Infrastructure</a></li>
+            <li><a href="services.html" class="footer-link">Energy & Utilities</a></li>
+            <li><a href="services.html" class="footer-link">Drone Operations</a></li>
+            <li><a href="services.html" class="footer-link">Corporate Portraits</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Contact Studio</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>700 Steel Boulevard, Suite 100, Pittsburgh, PA 15222</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>(800) 555-PHOT</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>contact@indusphoto.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Indus Photo. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top Button -->
+  <button id="scroll-top" class="scroll-top-btn" aria-label="Scroll to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Script JS Link -->
+  <script src="main.js"></script>
 </body>
-
 </html>

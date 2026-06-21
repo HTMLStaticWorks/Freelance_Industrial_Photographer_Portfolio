@@ -1,454 +1,560 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services — Restore Vintage Watch Restoration</title>
-    <meta name="description"
-        content="Master-level restoration services for vintage timepieces. From essential overhauls to complete museum-grade restorations.">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;600&display=swap"
-        rel="stylesheet">
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- CSS -->
-    <link rel="stylesheet" href="index.css">
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Sectors & Services | Indus Photo Industrial Photography</title>
+  <meta name="description"
+    content="Explore my specialized industrial photography sectors: heavy manufacturing, civil infrastructure construction, energy utilities, drone surveys, and corporate PR portraiture.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="My Sectors & Services | Indus Photo Industrial Photography">
+  <meta property="og:description"
+    content="Professional safety-compliant photography documenting manufacturing floors, active civil infrastructure builds, and energy projects.">
+  <meta property="og:image" content="images/hero_industrial.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="sectors-page">
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo"><i class="fas fa-clock" style="margin-right: 10px;"></i>RESTORE</a>
+  <!-- HEADER -->
+  <header class="header sticky" id="header"
+    style="background: var(--bg-header); border-bottom: 1px solid var(--border-color);">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">I</div>
+        <div class="logo-text">Indus Photo<span>.</span></div>
+      </a>
+      <nav class="nav" id="nav-menu">
+        <div class="nav-dropdown desktop-only">
+          <a href="#" class="nav-link dropdown-toggle" id="nav-home">Home <svg class="dropdown-arrow" width="10"
+              height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M1 1L5 5L9 1" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></a>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-item">Home 1</a>
+            <a href="index2.html" class="dropdown-item">Home 2</a>
+          </div>
+        </div>
+        <a href="index.html" class="nav-link mobile-only" id="nav-home1-mob">Home 1</a>
+        <a href="index2.html" class="nav-link mobile-only" id="nav-home2-mob">Home 2</a>
+        <a href="about.html" class="nav-link" id="nav-about">About Me</a>
+        <a href="services.html" class="nav-link active" id="nav-services">Sectors</a>
+        <a href="portfolio.html" class="nav-link" id="nav-portfolio">Portfolio</a>
+        <a href="process.html" class="nav-link" id="nav-process">Process</a>
+        <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
+        <a href="login.html" class="nav-link mobile-only login-mobile-btn" id="nav-login-mob">Login</a>
+      </nav>
+      <div class="header-actions">
+        <!-- RTL Toggle -->
+        <button id="rtl-toggle" class="theme-toggle" aria-label="Toggle Layout Direction"
+          style="font-size: 0.85rem; font-weight: 500;">RTL</button>
+        <!-- Dark Mode Toggle -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <a href="login.html" class="btn btn-primary desktop-only"
+          style="padding: 0.6rem 1.25rem; font-size: 0.9rem;">Login</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <svg class="hamburger-close-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+            style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="story.html">Home 2</a></li>
-                <li><a href="services.html" class="active">Services</a></li>
-                <li><a href="process.html">Process</a></li>
-                <li><a href="journal.html">Journal</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <!-- Mobile Actions -->
-                <li class="nav-actions-mobile">
-                    <button class="toggle-btn rtl-toggle" title="Toggle RTL"
-                        style="color: white; font-family: 'Cinzel', serif; font-size: 0.8rem; margin-bottom: 1rem;">
-                        <i class="fas fa-exchange-alt"></i> Toggle RTL
-                    </button>
-                    <button class="toggle-btn theme-toggle" title="Toggle Theme"
-                        style="color: white; font-family: 'Cinzel', serif; font-size: 0.8rem;">
-                        <i class="fas fa-moon"></i> Theme Mode
-                    </button>
-                </li>
+  <!-- INNER PAGE HERO -->
+  <section class="section"
+    style="padding-top: 7.5rem; padding-bottom: 3.5rem; background: var(--primary); color: #FFFFFF; position: relative;">
+    <div
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--premium-gradient); opacity: 0.05;">
+    </div>
+    <div class="container" style="position: relative; z-index: 2; text-align: center;">
+      <span class="badge"
+        style="background: rgba(255,255,255,0.1); color: #FFFFFF; border-color: rgba(255,255,255,0.2);">What I
+        Do</span>
+      <h1 style="color: #FFFFFF; font-size: 3.5rem; margin-bottom: 1rem;">Photography Sectors</h1>
+      <p class="lead-text" style="color: rgba(248, 250, 252, 0.8); max-width: 700px; margin: 0 auto;">Specialized commercial media services documenting manufacturing, infrastructure, and energy transition assets.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES GRID SECTION -->
+  <section class="section" id="sectors-we-do">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Sectors I Cover</span>
+        <h2 class="section-title">Sectors I Cover</h2>
+        <p class="section-subtitle">Providing safety-compliant, high-end commercial media coverage for heavy industries, civil construction, utility operations, and corporate PR.</p>
+      </div>
+      <div class="cards-grid center-last-card">
+
+        <!-- Sector 1: Heavy Manufacturing -->
+        <div class="premium-card">
+          <div class="card-img-wrapper">
+            <img src="https://5.imimg.com/data5/ED/MX/MY-15699842/shop-floor-excellence.jpg"
+              alt="Close up of robotic automated welding arms throwing orange sparks inside a heavy assembly facility">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Industrial Production Floor</h3>
+            <p class="card-desc">Capturing complex fabrication lines, automated robotic assembly cells, CNC toolshops, and foundry operations with striking low-light control.</p>
+            <ul class="card-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>OSHA-compliant close-up profiles</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Macro detail and material textures</span>
+              </li>
             </ul>
-
-            <div class="nav-actions">
-                <button class="toggle-btn rtl-toggle" title="Toggle RTL">
-                    <i class="fas fa-exchange-alt"></i>
-                    <span class="rtl-toggle-text"
-                        style="font-size: 0.7rem; margin-left: 5px; font-family: 'Cinzel', serif;">RTL</span>
-                </button>
-                <button class="toggle-btn theme-toggle" title="Toggle Theme">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <a href="login.html" class="btn-login" style="font-family: 'Cinzel', serif;">Login</a>
-            </div>
-
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <a href="contact.html" class="btn btn-accent card-cta">Request Manufacturing Quote</a>
+          </div>
         </div>
-    </nav>
 
-    <!-- HERO SECTION -->
-    <section class="hero-section">
-        <div class="hero-blurred-bg"
-            style="background-image: url('https://www.watchworksus.com/cdn/shop/articles/A_sophisticated_and_modern_image_depicting_the_craftsmanship_involved_in_vintage_watch_repair_at_WatchWorks_in_Mission_Viejo_CA._The_scene_includes_a_1.webp?v=1714858854&width=1100');">
+        <!-- Sector 2: Civil Infrastructure -->
+        <div class="premium-card">
+          <div class="card-img-wrapper">
+            <img src="https://amsindia.co.in/wp-content/uploads/2025/01/7bb79e4693.jpg"
+              alt="Panoramic view of major bridge structure under active construction with tower cranes silhouette">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Urban Development Projects</h3>
+            <p class="card-desc">Documenting massive civil engineering projects, transport systems, highways, and bridge developments. Perfect for engineering bid submissions.</p>
+            <ul class="card-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Progress tracking and structural</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Aerial drone survey support</span>
+              </li>
+            </ul>
+            <a href="contact.html" class="btn btn-accent card-cta">Request Infrastructure Quote</a>
+          </div>
         </div>
-        <div class="hero-overlay"></div>
 
-        <div class="container text-center">
-            <span class="eyebrow">Our Expertise</span>
-            <h1 class="italic">The Art of Restoration</h1>
-            <p>From periodic servicing to museum-grade technical restoration, we preserve the heartbeat of Horology with
-                surgical precision.</p>
+        <!-- Sector 3: Energy & Utilities -->
+        <div class="premium-card">
+          <div class="card-img-wrapper">
+            <img src="https://thumbs.dreamstime.com/b/caucasian-worker-team-installing-solar-cell-sustainable-energy-power-eco-friendly-electricity-system-building-roof-439099669.jpg"
+              alt="Vast green wind turbines standing on green fields under clear sunset sky">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Sustainable Energy Solutions</h3>
+            <p class="card-desc">Documenting utility wind parks, solar fields, substations, and energy transmission lines. High-contrast landscape photography visualizing ESG programs.</p>
+            <ul class="card-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Wide environmental scale layouts</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Substation and grid assets mapping</span>
+              </li>
+            </ul>
+            <a href="contact.html" class="btn btn-accent card-cta">Request Energy Quote</a>
+          </div>
         </div>
-    </section>
 
-    <!-- SERVICE TIERS -->
-    <section class="section">
-        <div class="container">
-            <div class="grid grid-3 services-grid">
-                <!-- Tier 1 -->
-                <div class="card reveal"
-                    style="padding: 0; align-items: stretch; text-align: left; background: var(--bg-light);">
-                    <div style="background: var(--secondary); color: white; padding: 2rem; text-align: center;">
-                        <span style="font-family: 'Cinzel', serif; font-size: 0.7rem; letter-spacing: 2px;">THE
-                            ESSENTIAL</span>
-                        <h3 style="color: white; margin-top: 0.5rem;">Vintage Service</h3>
-                    </div>
-                    <div style="padding: 2.5rem;">
-                        <p style="font-size: 0.9rem; margin-bottom: 1.5rem; opacity: 0.8; min-height: 60px;">Recommended every 5–7 years
-                            to maintain optimal performance and prevent mechanical wear.</p>
-                        <h4 style="font-size: 1rem; margin-bottom: 1rem;">Primary Procedures:</h4>
-                        <ul style="font-size: 0.9rem;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                    style="color: var(--secondary); margin-right: 10px;"></i> Full movement disassembly
-                            </li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                    style="color: var(--secondary); margin-right: 10px;"></i> Ultrasonic cleaning of all
-                                parts</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                    style="color: var(--secondary); margin-right: 10px;"></i> Lubrication with Moebius
-                                oils</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                    style="color: var(--secondary); margin-right: 10px;"></i> Timing adjustment &
-                                regulation</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                    style="color: var(--secondary); margin-right: 10px;"></i> Gasket replacement</li>
-                        </ul>
-                        <a href="contact.html" class="btn btn-outline"
-                            style="width: 100%; margin-top: 2rem; display: flex; justify-content: center; align-items: center; text-align: center;">
-                            Select Service
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Tier 2 -->
-                <div class="card reveal"
-                    style="padding: 0; align-items: stretch; text-align: left; background: var(--bg-dark); transform: scale(1.05); z-index: 10; border-top: 5px solid var(--secondary); box-shadow: 0 30px 60px rgba(0,0,0,0.3); transition-delay: 0.1s;">
-                    <div style="background: var(--primary); color: white; padding: 2rem; text-align: center;">
-                        <span style="font-family: 'Cinzel', serif; font-size: 0.7rem; letter-spacing: 2px;">MOST
-                            REQUESTED</span>
-                        <h3 style="color: #FFFFFF !important; margin-top: 0.5rem;">Full Restoration</h3>
-                    </div>
-                    <div style="padding: 2.5rem; color: var(--text-light);">
-                        <p style="font-size: 0.9rem; margin-bottom: 1.5rem; opacity: 0.8; min-height: 60px;">A comprehensive
-                            transformation for timepieces that have reached an advanced state of neglect or wear.</p>
-                        <h4 style="font-size: 1rem; margin-bottom: 1rem; color: var(--text-light);">Includes "Essential"
-                            Plus:</h4>
-                        <ul style="font-size: 0.9rem;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-plus"
-                                    style="color: var(--secondary); margin-right: 10px;"></i> Advanced movement part
-                                fabrication</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-plus"
-                                    style="color: var(--secondary); margin-right: 10px;"></i> Full case refinishing &
-                                polishing</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-plus"
-                                    style="color: var(--secondary); margin-right: 10px;"></i> Dial cleaning & light
-                                restoration</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-plus"
-                                    style="color: var(--secondary); margin-right: 10px;"></i> Crystal replacement
-                                (Glass/Acrylic)</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-plus"
-                                    style="color: var(--secondary); margin-right: 10px;"></i> Hand re-shaping & luming
-                            </li>
-                        </ul>
-                        <a href="contact.html" class="btn btn-outline"
-                            style="width: 100%; margin-top: 2rem; display: flex; justify-content: center; align-items: center; text-align: center;">
-                            Inquire Privately
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Tier 3 -->
-                <div class="card reveal"
-                    style="padding: 0; align-items: stretch; text-align: left; background: var(--bg-light); transition-delay: 0.2s;">
-                    <div style="background: var(--secondary); color: white; padding: 2rem; text-align: center;">
-                        <span style="font-family: 'Cinzel', serif; font-size: 0.7rem; letter-spacing: 2px;">THE
-                            UNCOMPROMISING</span>
-                        <h3 style="color: white; margin-top: 0.5rem;">Museum Grade</h3>
-                    </div>
-                    <div style="padding: 2.5rem;">
-                        <p style="font-size: 0.9rem; margin-bottom: 1.5rem; opacity: 0.8; min-height: 60px;">For the rarest artifacts.
-                            Authentic restoration to match original factory specifications from any era.</p>
-                        <h4 style="font-size: 1rem; margin-bottom: 1rem;">Specialist Intervention:</h4>
-                        <ul style="font-size: 0.9rem;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-gem"
-                                    style="color: var(--secondary); margin-right: 10px;"></i> Historic part sourcing
-                                (NOS)</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-gem"
-                                    style="color: var(--secondary); margin-right: 10px;"></i> Dial restoration via
-                                master artist</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-gem"
-                                    style="color: var(--secondary); margin-right: 10px;"></i> Case restoration via laser
-                                weld</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-gem"
-                                    style="color: var(--secondary); margin-right: 10px;"></i> Full documentation &
-                                provenance</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-gem"
-                                    style="color: var(--secondary); margin-right: 10px;"></i> 2-Year Warranty extendable
-                            </li>
-                        </ul>
-                        <a href="contact.html" class="btn btn-outline"
-                            style="width: 100%; margin-top: 2rem; display: flex; justify-content: center; align-items: center; text-align: center;">
-                            Request Quote
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <!-- Sector 4: Aerial Drone Surveys -->
+        <div class="premium-card">
+          <div class="card-img-wrapper">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5--pc173Z0G2wCYGKESv3X-opWxlRwJoXSjk-7y7UpDwYf3Y7o7p_T_k&s=10"
+              alt="High elevation drone view of heavy industrial machinery layout and wind turbines">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">UAV Mapping & Imaging Services</h3>
+            <p class="card-desc">FAA Part 107 licensed drone photography mapping project layouts, roofs, solar grids, and bridges from epic high-elevation coordinates.</p>
+            <ul class="card-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>High-resolution orthomosaic views</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Dynamic cinematic video sweeps</span>
+              </li>
+            </ul>
+            <a href="contact.html" class="btn btn-accent card-cta">Request Drone Quote</a>
+          </div>
         </div>
-    </section>
 
-    <!-- DETAILS GRID -->
-    <section class="section" style="background-color: var(--bg-dark); color: var(--text-light);">
-        <div class="container">
-            <div class="text-center reveal" style="margin-bottom: 4rem;">
-                <span class="eyebrow" style="color: var(--secondary);">The Inclusions</span>
-                <h2 style="color: var(--text-light);">Standard with Every Restoration</h2>
-            </div>
-            <div class="grid grid-4 text-center">
-                <div class="card reveal">
-                    <div class="card-img-wrapper" style="height: 150px;">
-                        <img src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Packaging">
-                        <div class="card-overlay"></div>
-                    </div>
-                    <div class="card-content" style="padding: 1.5rem;">
-                        <i class="fas fa-archive"
-                            style="font-size: 1.5rem; color: var(--secondary); margin-bottom: 1rem;"></i>
-                        <h4 style="font-size: 1rem;">Archival Packaging</h4>
-                        <p style="font-size: 0.8rem; color: var(--secondary);">
-                            Restoration is delivered in a museum-grade preservation box.
-                        </p>
-                    </div>
-                </div>
-                <div class="card reveal" style="transition-delay: 0.1s;">
-                    <div class="card-img-wrapper" style="height: 150px;">
-                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Technical Report">
-                        <div class="card-overlay"></div>
-                    </div>
-                    <div class="card-content" style="padding: 1.5rem;">
-                        <i class="fas fa-file-invoice"
-                            style="font-size: 1.5rem; color: var(--secondary); margin-bottom: 1rem;"></i>
-                        <h4 style="font-size: 1rem;">Technical Report</h4>
-                        <p style="font-size: 0.8rem; color: var(--secondary);">Detailed breakdown of all services and
-                            timing
-                            results.</p>
-                    </div>
-                </div>
-                <div class="card reveal" style="transition-delay: 0.2s;">
-                    <div class="card-img-wrapper" style="height: 150px;">
-                        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Photo Journal">
-                        <div class="card-overlay"></div>
-                    </div>
-                    <div class="card-content" style="padding: 1.5rem;">
-                        <i class="fas fa-camera"
-                            style="font-size: 1.5rem; color: var(--secondary); margin-bottom: 1rem;"></i>
-                        <h4 style="font-size: 1rem;">Photo Journal</h4>
-                        <p style="font-size: 0.8rem; color: var(--secondary);">Before and after macro documentation of
-                            the process.
-                        </p>
-                    </div>
-                </div>
-                <div class="card reveal" style="transition-delay: 0.3s;">
-                    <div class="card-img-wrapper" style="height: 150px;">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8jgIZ2kzLsyJDBKzfH4o-1uWukmaO8hUUNA&s"
-                            alt="Warranty">
-                        <div class="card-overlay"></div>
-                    </div>
-                    <div class="card-content" style="padding: 1.5rem;">
-                        <i class="fas fa-shield-alt"
-                            style="font-size: 1.5rem; color: var(--secondary); margin-bottom: 1rem;"></i>
-                        <h4 style="font-size: 1rem;">Timing Warranty</h4>
-                        <p style="font-size: 0.8rem; color: var(--secondary);">
-                            A comprehensive one-year guarantee on mechanical precision.
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <!-- Sector 5: Corporate PR Portraits -->
+        <div class="premium-card">
+          <div class="card-img-wrapper">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Inuy0nSaNA1UxvTszTdYEt8a9FuSFkN9TQdjesQUBu5Jsxg1mM0wci_O&s=10"
+              alt="Industrial photographer in safety hardhat and high-visibility vest standing in factory holding camera">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Corporate Branding Portraits</h3>
+            <p class="card-desc">Professional corporate headshots and team photos captured in context directly on the factory floor, construction deck, or offices.</p>
+            <ul class="card-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Mobile studio lighting sets</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Natural action portraits in safety gear</span>
+              </li>
+            </ul>
+            <a href="contact.html" class="btn btn-accent card-cta">Request Portrait Quote</a>
+          </div>
         </div>
-    </section>
 
-    <!-- ADD-ONS -->
-    <section class="section">
-        <div class="container">
-            <div class="grid grid-2" style="align-items: center;">
-                <div class="addons-content reveal">
-                    <span class="eyebrow">The Details</span>
-                    <h2>Restoration Enhancements</h2>
-                    <p>Elevate your timepiece with our curated selection of artisanal enhancements and protective
-                        services.</p>
-                    <div style="margin-top: 2rem;">
-                        <div
-                            style="display: flex; justify-content: space-between; padding: 1rem 0; border-bottom: 1px solid var(--border);">
-                            <span style="font-family: 'Cinzel', serif;">Bespoke Leather Straps</span>
-                            <span style="color: var(--secondary);">From £180</span>
-                        </div>
-                        <div
-                            style="display: flex; justify-content: space-between; padding: 1rem 0; border-bottom: 1px solid var(--border);">
-                            <span style="font-family: 'Cinzel', serif;">Crystal Restoration (Acrylic)</span>
-                            <span style="color: var(--secondary);">From £90</span>
-                        </div>
-                        <div
-                            style="display: flex; justify-content: space-between; padding: 1rem 0; border-bottom: 1px solid var(--border);">
-                            <span style="font-family: 'Cinzel', serif;">Ceramic Coating Protection</span>
-                            <span style="color: var(--secondary);">From £140</span>
-                        </div>
-                        <div
-                            style="display: flex; justify-content: space-between; padding: 1rem 0; border-bottom: 1px solid var(--border);">
-                            <span style="font-family: 'Cinzel', serif;">Engraving Preservation</span>
-                            <span style="color: var(--secondary);">From £200</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="addons-img reveal" style="padding-left: 2rem; transition-delay: 0.2s;">
-                    <img src="https://www.fratellowatches.com/cdn-cgi/image/anim=false/wp-content/uploads/2024/04/Photo-2-4-2024-12-23-33-pm.jpg"
-                        alt="Restore add-ons" style="width: 100%; border: 10px solid var(--bg-light);">
-                </div>
-            </div>
+        <!-- Sector 6: Maritime & Logistics -->
+        <div class="premium-card">
+          <div class="card-img-wrapper">
+            <img src="https://thumbs.dreamstime.com/b/logistics-team-engineers-inspecting-container-stack-shipping-supply-chain-management-multiracial-port-authorities-440893414.jpg"
+              alt="Cargo port terminal with container crane loading massive container ship at twilight">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Port Operations & Chain Services</h3>
+            <p class="card-desc">Documenting shipping ports, cargo terminals, freight warehouses, and marine logistics. High-contrast landscape and operations photography.</p>
+            <ul class="card-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>TWIC-cleared port operations</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Wide-angle shipping terminal views</span>
+              </li>
+            </ul>
+            <a href="contact.html" class="btn btn-accent card-cta">Request Maritime Quote</a>
+          </div>
         </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col reveal">
-                    <a href="index.html" class="logo" style="display: block; margin-bottom: 1.5rem;"><i
-                            class="fas fa-clock" style="margin-right: 10px;"></i>RESTORE</a>
-                    <p style="font-size: 0.9rem; opacity: 0.7;">Restoring time's treasures since 1987. We specialize in
-                        the preservation and technical restoration of vintage mechanical timepieces from the world's
-                        finest manufactures.</p>
-                    <div class="social-links" style="margin-top: 1.5rem; display: flex; gap: 1rem;">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col reveal" style="transition-delay: 0.1s;">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="story.html">Story</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="process.html">Process</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col reveal" style="transition-delay: 0.2s;">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">Movement Overhaul</a></li>
-                        <li><a href="services.html">Case Restoration</a></li>
-                        <li><a href="services.html">Dial Refinishing</a></li>
-                        <li><a href="services.html">Strap Customization</a></li>
-                        <li><a href="services.html">Assessment</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col reveal" style="transition-delay: 0.3s;">
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--secondary);"></i>
-                            14 Clockmaker's Lane, Suite 3</li>
-                        <li><i class="fas fa-phone" style="margin-right: 10px; color: var(--secondary);"></i> (555)
-                            WATCH-01</li>
-                        <li><i class="fas fa-envelope" style="margin-right: 10px; color: var(--secondary);"></i>
-                            hello@restore-watch.com</li>
-                        <li><i class="fas fa-clock" style="margin-right: 10px; color: var(--secondary);"></i> Mon–Fri
-                            9am–6pm</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Restore Watch Restoration. All rights reserved.</p>
-            </div>
-            <style>
-                @media (min-width: 1024px) {
-                   .services-grid {
-                       display: grid;
-                       grid-template-columns: repeat(3, 1fr);
-                   }
-                }
-                @media (max-width: 1024px) and (min-width: 769px) {
-                    .services-grid {
-                        grid-template-columns: repeat(2, 1fr) !important;
-                        gap: 3rem;
-                    }
-                    .services-grid > *:last-child:nth-child(odd) {
-                        grid-column: 1 / -1;
-                        justify-self: center;
-                        width: 100%;
-                        max-width: calc(50% - 1.5rem); /* Ensures size matches the 2-column cards above */
-                    }
-                }
-                
-                /* Tablet Specific Alignment Fix */
-                @media (max-width: 768px) and (min-width: 481px) {
-                    .services-grid {
-                        grid-template-columns: repeat(2, 1fr) !important;
-                    }
-                    .services-grid > *:last-child:nth-child(odd) {
-                        grid-column: 1 / -1;
-                        justify-self: center;
-                        width: 100%;
-                        max-width: calc(50% - 1.5rem); /* Matches the width of the cards in the 2-column row */
-                    }
-                }
-            </style>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE INDUS PHOTO SECTION -->
+  <section class="section" id="safety-compliance"
+    style="background: var(--bg-card); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Safety Compliance</span>
+        <h2 class="section-title">The Safety-First Difference</h2>
+        <p class="section-subtitle">I possess regulatory clearances and safety tools standard-fit for heavy industry sites, eliminating administrative delays.</p>
+      </div>
+      <div class="cards-grid center-last-card">
+        <div class="premium-card"
+          style="padding: 2.5rem; border-top: 4px solid var(--accent); display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"
+            style="margin-bottom: 1.5rem;">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+          <h3 style="font-size: 1.35rem; font-weight: 560; margin-bottom: 1rem; color: var(--text-main);">OSHA-30 Certified</h3>
+          <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 0;">I undergo OSHA-30 safety training, enabling me to recognize site hazards, coordinate safely, and integrate with site workflows without interference.</p>
         </div>
-    </footer>
+        <div class="premium-card"
+          style="padding: 2.5rem; border-top: 4px solid var(--accent); display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"
+            style="margin-bottom: 1.5rem;">
+            <circle cx="12" cy="12" r="10" />
+            <polyline points="12 6 12 12 16 14" />
+          </svg>
+          <h3 style="font-size: 1.35rem; font-weight: 560; margin-bottom: 1rem; color: var(--text-main);">TWIC & Port Cleared</h3>
+          <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 0;">I carry active Transportation Worker Identification Credentials (TWIC) permitted for unescorted access to marine terminals, ports, and critical infrastructure.</p>
+        </div>
+        <div class="premium-card"
+          style="padding: 2.5rem; border-top: 4px solid var(--accent); display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"
+            style="margin-bottom: 1.5rem;">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+            <polyline points="22 4 12 14.01 9 11.01" />
+          </svg>
+          <h3 style="font-size: 1.35rem; font-weight: 560; margin-bottom: 1rem; color: var(--text-main);">$5M  Insurance</h3>
+          <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 0;">Every project is backed by my $5,000,000 commercial general liability insurance, meeting safety audit compliance requirements for major contractors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <button class="back-to-top" aria-label="Back to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+  <!-- SERVICE PROCESS OVERVIEW SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Shoot Day Workflow</span>
+        <h2 class="section-title">Safety-First Shoot Delivery Process</h2>
+        <p class="section-subtitle">My structured, 4-phase coordination workflow ensures high-impact visual delivery with zero site incident.</p>
+      </div>
+      <div class="stack-on-mobile"
+        style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative;">
+        <div class="desktop-only"
+          style="position: absolute; top: 40px; left: 12.5%; right: 12.5%; height: 2px; background: var(--border-color); z-index: 0;">
+        </div>
+        <div style="text-align: center; padding: 2rem 1.5rem; position: relative; z-index: 1;">
+          <div
+            style="width: 80px; height: 80px; background: var(--premium-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; font-size: 1.75rem; font-weight: 600; color: #fff; box-shadow: 0 8px 24px rgba(249,115,22,0.35);">
+            01</div>
+          <h3 style="font-size: 1.1rem; font-weight: 560; margin-bottom: 0.75rem;">Safety Briefing</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Discovery briefing mapping site boundaries, physical hazards, active sectors, and PPE requirements.</p>
+        </div>
+        <div style="text-align: center; padding: 2rem 1.5rem; position: relative; z-index: 1;">
+          <div
+            style="width: 80px; height: 80px; background: var(--premium-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; font-size: 1.75rem; font-weight: 600; color: #fff; box-shadow: 0 8px 24px rgba(249,115,22,0.35);">
+            02</div>
+          <h3 style="font-size: 1.1rem; font-weight: 560; margin-bottom: 0.75rem;">Scouting & Plan</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Photographers scout machinery angles, lighting profiles, and timing windows to maximize shoot efficiency.</p>
+        </div>
+        <div style="text-align: center; padding: 2rem 1.5rem; position: relative; z-index: 1;">
+          <div
+            style="width: 80px; height: 80px; background: var(--premium-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; font-size: 1.75rem; font-weight: 600; color: #fff; box-shadow: 0 8px 24px rgba(249,115,22,0.35);">
+            03</div>
+          <h3 style="font-size: 1.1rem; font-weight: 560; margin-bottom: 0.75rem;">On-Site Shoot</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Active ground and drone capture, wearing site-compliant PPE and coordinating with machine operators.</p>
+        </div>
+        <div style="text-align: center; padding: 2rem 1.5rem; position: relative; z-index: 1;">
+          <div
+            style="width: 80px; height: 80px; background: var(--premium-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; font-size: 1.75rem; font-weight: 600; color: #fff; box-shadow: 0 8px 24px rgba(249,115,22,0.35);">
+            04</div>
+          <h3 style="font-size: 1.1rem; font-weight: 560; margin-bottom: 0.75rem;">Color & Deliver</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Professional RAW post-processing and color calibration, delivering high-contrast, publication-ready images.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="main.js"></script>
-    <style>
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-        }
+  <!-- PRICING TIERS SECTION -->
+  <section class="section" id="shoot-estimator"
+    style="background: var(--bg-card); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Shoot Estimator</span>
+        <h2 class="section-title">Photography Investment Tiers</h2>
+        <p class="section-subtitle">I offer structured packages tailored for engineering bids and PR campaigns. Custom site proposals can be configured via contact brief.</p>
+      </div>
+      <div class="stack-on-mobile center-last-card"
+        style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem;">
+        <!-- Essentials Tier -->
+        <div class="premium-card" style="padding: 2.5rem;">
+          <h3 style="font-size: 1.3rem; font-weight: 560; margin-bottom: 0.5rem;">Standard Site Shoot</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Ideal for regional manufacturing facilities, tool shops, and team PR portraits.</p>
+          <div style="font-size: 2.5rem; font-weight: 680; color: var(--accent); margin-bottom: 1.5rem;">From $1,200</div>
+          <ul class="card-features" style="list-style: none; display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 2rem;">
+            <li style="display: flex; gap: 0.75rem; font-size: 0.9rem;"><svg width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="var(--success)" stroke-width="2" style="flex-shrink:0; margin-top:2px;">
+                <polyline points="20 6 9 17 4 12" />
+              </svg><span>Half-day on-site photography</span></li>
+            <li style="display: flex; gap: 0.75rem; font-size: 0.9rem;"><svg width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="var(--success)" stroke-width="2" style="flex-shrink:0; margin-top:2px;">
+                <polyline points="20 6 9 17 4 12" />
+              </svg><span>25 high-res color-graded images</span></li>
+            <li style="display: flex; gap: 0.75rem; font-size: 0.9rem;"><svg width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="var(--success)" stroke-width="2" style="flex-shrink:0; margin-top:2px;">
+                <polyline points="20 6 9 17 4 12" />
+              </svg><span>OSHA safety-compliant ground</span></li>
+            <li style="display: flex; gap: 0.75rem; font-size: 0.9rem;"><svg width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="var(--success)" stroke-width="2" style="flex-shrink:0; margin-top:2px;">
+                <polyline points="20 6 9 17 4 12" />
+              </svg><span>PR and internal media rights</span></li>
+          </ul>
+          <a href="contact.html" class="btn btn-accent card-cta">Book Standard Shoot</a>
+        </div>
+        <!-- Professional Tier -->
+        <div class="premium-card" style="padding: 2.5rem; border: 2px solid var(--accent); position: relative;">
+          <div
+            style="position: absolute; top: -1px; left: 50%; transform: translateX(-50%); background: var(--premium-gradient); color: #fff; padding: 0.3rem 1.25rem; border-radius: 0 0 8px 8px; font-size: 0.8rem; font-weight: 600; white-space: nowrap;">
+            RECOMMENDED FOR BIDS</div>
+          <h3 style="font-size: 1.3rem; font-weight: 560; margin-bottom: 0.5rem; margin-top: 0.5rem;">Heavy Infrastructure</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Perfect for active civil construction builds, bridges, and energy substation grids.</p>
+          <div style="font-size: 2.5rem; font-weight: 680; color: var(--accent); margin-bottom: 1.5rem;">From $1,800
+          </div>
+          <ul class="card-features" style="list-style: none; display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 2rem;">
+            <li style="display: flex; gap: 0.75rem; font-size: 0.9rem;"><svg width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="var(--success)" stroke-width="2" style="flex-shrink:0; margin-top:2px;">
+                <polyline points="20 6 9 17 4 12" />
+              </svg><span>Full-day ground & drone mapping</span></li>
+            <li style="display: flex; gap: 0.75rem; font-size: 0.9rem;"><svg width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="var(--success)" stroke-width="2" style="flex-shrink:0; margin-top:2px;">
+                <polyline points="20 6 9 17 4 12" />
+              </svg><span>60 edited cinematic photographs</span></li>
+            <li style="display: flex; gap: 0.75rem; font-size: 0.9rem;"><svg width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="var(--success)" stroke-width="2" style="flex-shrink:0; margin-top:2px;">
+                <polyline points="20 6 9 17 4 12" />
+              </svg><span>OSHA safety certified + drone</span></li>
+            <li style="display: flex; gap: 0.75rem; font-size: 0.9rem;"><svg width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="var(--success)" stroke-width="2" style="flex-shrink:0; margin-top:2px;">
+                <polyline points="20 6 9 17 4 12" />
+              </svg><span>Complete commercial bid bidding</span></li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary card-cta">Book Infrastructure Shoot</a>
+        </div>
+        <!-- Enterprise Tier -->
+        <div class="premium-card" style="padding: 2.5rem;">
+          <h3 style="font-size: 1.3rem; font-weight: 560; margin-bottom: 0.5rem;">Multi-Location</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Comprehensive media tracking for large-scale utility and grid rollouts across multiple locations.</p>
+          <div style="font-size: 2.5rem; font-weight: 680; color: var(--accent); margin-bottom: 1.5rem;">Custom
+          </div>
+          <ul class="card-features" style="list-style: none; display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 2rem;">
+            <li style="display: flex; gap: 0.75rem; font-size: 0.9rem;"><svg width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="var(--success)" stroke-width="2" style="flex-shrink:0; margin-top:2px;">
+                <polyline points="20 6 9 17 4 12" />
+              </svg><span>Multi-site logistics coordination</span></li>
+            <li style="display: flex; gap: 0.75rem; font-size: 0.9rem;"><svg width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="var(--success)" stroke-width="2" style="flex-shrink:0; margin-top:2px;">
+                <polyline points="20 6 9 17 4 12" />
+              </svg><span>Unlimited drone mapping & shots</span></li>
+            <li style="display: flex; gap: 0.75rem; font-size: 0.9rem;"><svg width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="var(--success)" stroke-width="2" style="flex-shrink:0; margin-top:2px;">
+                <polyline points="20 6 9 17 4 12" />
+              </svg><span>TWIC, OSHA clearance</span></li>
+            <li style="display: flex; gap: 0.75rem; font-size: 0.9rem;"><svg width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="var(--success)" stroke-width="2" style="flex-shrink:0; margin-top:2px;">
+                <polyline points="20 6 9 17 4 12" />
+              </svg><span>Unlimited global marketing & media</span></li>
+          </ul>
+          <a href="contact.html" class="btn btn-accent card-cta">Request Campaign Proposal</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        .reveal.revealed {
-            opacity: 1;
-            transform: translateY(0);
-        }
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">I</div>
+            <div class="logo-text">Indus Photo<span>.</span></div>
+          </a>
+          <p class="footer-desc">Cinematic heavy industry, energy sector, and infrastructure project photography for engineering contractors and media teams.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn brand-linkedin" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="#" class="social-btn brand-facebook" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-btn brand-twitter" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" class="social-btn brand-instagram" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About Me</a></li>
+            <li><a href="process.html" class="footer-link">My Process</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+            <li><a href="about.html#faq" class="footer-link">FAQs</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Sectors</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Manufacturing</a></li>
+            <li><a href="services.html" class="footer-link">Infrastructure</a></li>
+            <li><a href="services.html" class="footer-link">Energy & Utilities</a></li>
+            <li><a href="services.html" class="footer-link">Drone Operations</a></li>
+            <li><a href="services.html" class="footer-link">Corporate Portraits</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Contact Studio</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>700 Steel Boulevard, Suite 100, Pittsburgh, PA 15222</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            <span>(800) 555-PHOT</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>contact@indusphoto.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Indus Photo. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
-        @media (max-width: 1024px) {
-            .grid-3 {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 3rem;
-            }
+  <!-- Scroll Top Button -->
+  <button id="scroll-top" class="scroll-top-btn" aria-label="Scroll to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
 
-            .card:nth-child(2) {
-                transform: none;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .grid-3 {
-                grid-template-columns: 1fr;
-            }
-
-            .pricing-grid {
-                display: flex !important;
-                flex-direction: column !important;
-                align-items: center !important;
-            }
-
-            .pricing-grid .card {
-                width: 100%;
-                max-width: 450px;
-                margin: 0 auto 2rem;
-            }
-
-            .grid-4 {
-                grid-template-columns: repeat(2, 1fr) !important;
-            }
-        }
-    </style>
+  <!-- Script JS Link -->
+  <script src="main.js"></script>
 </body>
 
 </html>

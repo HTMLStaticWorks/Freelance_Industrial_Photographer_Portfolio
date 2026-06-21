@@ -1,519 +1,550 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restore — Vintage Watch Repair & Restoration</title>
-    <meta name="description"
-        content="Master watchmakers breathing new life into the world's most treasured timepieces since 1987. Luxury vintage watch restoration.">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;600&display=swap"
-        rel="stylesheet">
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- CSS -->
-    <link rel="stylesheet" href="index.css">
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indus Photo | Premium Industrial Photographer Portfolio</title>
+  <meta name="description"
+    content="High-end industrial photography specializing in manufacturing floor operations, infrastructure construction, and energy utility sites. Targeting engineering and PR firms.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Indus Photo | Premium Industrial Photographer Portfolio">
+  <meta property="og:description"
+    content="Cinematic heavy industry photography documenting logistics, infrastructure, and energy assets.">
+  <meta property="og:image" content="images/hero_industrial.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="home-page home-page-1">
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo"><i class="fas fa-clock" style="margin-right: 10px;"></i>RESTORE</a>
-
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="story.html">Home 2 </a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="process.html">Process</a></li>
-                <li><a href="journal.html">Journal</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <!-- Mobile Actions -->
-                <li class="nav-actions-mobile">
-                    <button class="toggle-btn rtl-toggle" title="Toggle RTL"
-                        style="color: white; font-family: 'Cinzel', serif; font-size: 0.8rem; margin-bottom: 1rem;">
-                        <i class="fas fa-exchange-alt"></i> Toggle RTL
-                    </button>
-                    <button class="toggle-btn theme-toggle" title="Toggle Theme"
-                        style="color: white; font-family: 'Cinzel', serif; font-size: 0.8rem;">
-                        <i class="fas fa-moon"></i> Theme Mode
-                    </button>
-                </li>
-            </ul>
-
-            <div class="nav-actions">
-                <button class="toggle-btn rtl-toggle" title="Toggle RTL">
-                    <i class="fas fa-exchange-alt"></i>
-                    <span class="rtl-toggle-text"
-                        style="font-size: 0.7rem; margin-left: 5px; font-family: 'Cinzel', serif;">RTL</span>
-                </button>
-                <button class="toggle-btn theme-toggle" title="Toggle Theme">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <a href="login.html" class="btn-login" style="font-family: 'Cinzel', serif;">Login</a>
-            </div>
-
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+  <!-- HEADER — sits above hero, never overlapping -->
+  <header class="header sticky" id="header"
+    style="background: var(--bg-header); border-bottom: 1px solid rgba(255,255,255,0.12);">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">I</div>
+        <div class="logo-text">Indus Photo<span>.</span></div>
+      </a>
+      <nav class="nav" id="nav-menu">
+        <div class="nav-dropdown desktop-only">
+          <a href="#" class="nav-link dropdown-toggle active" id="nav-home">Home <svg class="dropdown-arrow" width="10"
+              height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M1 1L5 5L9 1" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></a>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-item active" style="background: rgba(249, 115, 22, 0.1); color: var(--accent);">Home 1</a>
+            <a href="index2.html" class="dropdown-item">Home 2</a>
+          </div>
         </div>
-    </nav>
-
-    <!-- HERO SECTION -->
-    <section class="hero-section" style="height: 100vh;">
-        <div class="hero-blurred-bg" style="background-image: url('https://awco.nl/wp-content/uploads/2022/07/cartier-instagram-awco-2-e1658829514265.jpeg');"></div>
-        <div class="hero-overlay"></div>
-        
-        <div class="container text-center">
-            <span class="eyebrow">Since 1987</span>
-            <h1 class="italic">Time, Restored to Perfection</h1>
-            <p>Master watchmakers breathing new life into the world's most treasured timepieces. Experience original craftsmanship meeting modern precision.</p>
-            <div class="hero-btns" style="display: flex; gap: 1.5rem; justify-content: center;">
-                <a href="contact.html" class="btn btn-primary">Begin Your Restoration</a>
-            </div>
-        </div>
-        
-        <!-- Animated Gear Element -->
-        <i class="fas fa-cog" style="position: absolute; bottom: 5%; right: 5%; font-size: 200px; color: rgba(184, 149, 63, 0.05); animation: rotate 45s linear infinite; z-index: 1;"></i>
-    </section>
-
-    <!-- TRUST BAR -->
-
-
-    <!-- SERVICES OVERVIEW -->
-    <section class="section">
-    <div class="container">
-        <div class="text-center mb-5 reveal" style="margin-bottom: 4rem;">
-            <span class="eyebrow">Our Specialization</span>
-            <h2>The Mastery of the Craft</h2>
-            <p class="italic" style="color: var(--secondary);">
-                Revitalizing every component with absolute precision
-            </p>
-        </div>
-
-        <div class="grid grid-3">
-            <!-- Card 1 -->
-            <div class="card reveal">
-                <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="Chronograph Movement">
-                    <div class="card-overlay"></div>
-                </div>
-                <div class="card-content">
-                    <span class="eyebrow" style="margin-bottom: 1rem;">The Complication</span>
-                    <h3>Precision</h3>
-                    <p>Complete disassembly, cleaning, and lubrication of the movement using factory-specified Swiss oils.</p>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="card reveal" style="transition-delay: 0.1s;">
-                <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="Dial Restoration">
-                    <div class="card-overlay"></div>
-                </div>
-                <div class="card-content">
-                    <span class="eyebrow" style="margin-bottom: 1rem;">The Aesthetics</span>
-                    <h3>Bespoke Dial</h3>
-                    <p>Sympathetic cleaning of dials and hand-polishing of cases to restore luster without removing historical character.</p>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="card reveal" style="transition-delay: 0.2s;">
-                <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="Vintage Rolex Restoration">
-                    <div class="card-overlay"></div>
-                </div>
-                <div class="card-content">
-                    <span class="eyebrow" style="margin-bottom: 1rem;">The Legacy</span>
-                    <h3> Authentication</h3>
-                    <p>Provenance verification and archive research to ensure your timepiece retains its market value and historical soul.</p>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="card reveal" style="transition-delay: 0.3s;">
-                <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="Watch Glass Replacement">
-                    <div class="card-overlay"></div>
-                </div>
-                <div class="card-content">
-                    <span class="eyebrow" style="margin-bottom: 1rem;">The Clarity</span>
-                    <h3>Replacement</h3>
-                    <p>Replacement of scratched or damaged crystals with high-grade sapphire or mineral glass for lasting clarity.</p>
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="card reveal" style="transition-delay: 0.4s;">
-                <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1609587312208-cea54be969e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="Water Resistance Testing">
-                    <div class="card-overlay"></div>
-                </div>
-                <div class="card-content">
-                    <span class="eyebrow" style="margin-bottom: 1rem;">The Protection</span>
-                    <h3> Resistance</h3>
-                    <p>Advanced pressure testing and gasket replacement to ensure your timepiece remains protected against moisture.</p>
-                </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="card reveal" style="transition-delay: 0.5s;">
-                <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1587831990711-23ca6441447b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="Watch Calibration">
-                    <div class="card-overlay"></div>
-                </div>
-                <div class="card-content">
-                    <span class="eyebrow" style="margin-bottom: 1rem;">The Accuracy</span>
-                    <h3>Testing</h3>
-                    <p>Fine-tuning the movement for optimal accuracy using precision timing machines and expert calibration techniques.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="text-center" style="margin-top: 4rem;">
-            <a href="services.html" class="btn btn-outline">View All Services</a>
-        </div>
+        <a href="index.html" class="nav-link mobile-only active" id="nav-home1-mob" style="color: var(--accent);">Home 1</a>
+        <a href="index2.html" class="nav-link mobile-only" id="nav-home2-mob">Home 2</a>
+        <a href="about.html" class="nav-link" id="nav-about">About Me</a>
+        <a href="services.html" class="nav-link" id="nav-services">Sectors</a>
+        <a href="portfolio.html" class="nav-link" id="nav-portfolio">Portfolio</a>
+        <a href="process.html" class="nav-link" id="nav-process">Process</a>
+        <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
+        <a href="login.html" class="nav-link mobile-only login-mobile-btn" id="nav-login-mob">Login</a>
+      </nav>
+      <div class="header-actions">
+        <button id="rtl-toggle" class="theme-toggle" aria-label="Toggle Layout Direction"
+          style="font-size: 0.85rem; font-weight: 500;">RTL</button>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <a href="login.html" class="btn btn-primary desktop-only"
+          style="padding: 0.6rem 1.25rem; font-size: 0.9rem;">Login</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <svg class="hamburger-close-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+            style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
     </div>
-</section>
+  </header>
 
-    <!-- BEFORE & AFTER SHOWCASE -->
-    <section class="section" style="background-color: var(--bg-dark); color: var(--text-light);">
-        <div class="container">
-            <div class="text-center reveal" style="margin-bottom: 4rem;">
-                <span class="eyebrow" style="color: var(--secondary);">The Transformation</span>
-                <h2 style="color: var(--text-light);">Restored Masterpieces</h2>
-                <p class="italic" style="color: var(--accent);">Witness the journey from neglect to perfection</p>
-            </div>
-
-            <div class="comparison-container reveal"
-                style="position: relative; max-width: 900px; margin: 0 auto; border: 5px solid var(--secondary); overflow: hidden; height: 500px; cursor: ew-resize;">
-                <div class="after-image"
-                    style="width: 100%; height: 100%; background: url('rolex_before_after_1774534215064.png') no-repeat right center/cover;">
-                </div>
-                <div class="before-image"
-                    style="position: absolute; top: 0; left: 0; width: 50%; height: 100%; background: url('') no-repeat left center/cover; border-right: 2px solid var(--secondary);">
-                </div>
-                
-            </div>
-
-            <div class="text-center" style="margin-top: 4rem;">
-                <p style="margin-bottom: 2rem; opacity: 0.8;">1958 Rolex Oyster Perpetual — Movement & Case Restoration
-                </p>
-                <a href="" class="btn btn-primary">See Full Portfolio</a>
-            </div>
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero" style="min-height: 80vh; padding-top: 7.5rem;">
+    <div class="hero-bg">
+      <img src="images/hero_industrial.png"
+        alt="Panoramic view of heavy manufacturing workshop and utility wind energy turbines at sunset">
+    </div>
+    <div class="container" style="position: relative; z-index: 2; text-align: center; width: 100%;">
+      <div style="max-width: 900px; margin: 0 auto;">
+        <span class="badge"
+          style="background: rgba(255,255,255,0.15); color: #FFFFFF; border-color: rgba(255,255,255,0.3);">Industrial Media Partner</span>
+        <h1 class="hero-title" style="color: #FFFFFF; text-shadow: none;">Visualizing Heavy Industry & Infrastructure</h1>
+        <p class="hero-subtitle" style="color: rgba(255,255,255,0.9);">Cinematic, high-fidelity site photography mapping manufacturing plants, energy projects, and civil developments. Custom media assets built for engineering firms and corporate PR campaigns.</p>
+        <div style="display: flex; gap: 1.25rem; justify-content: center; padding-bottom: 3rem;">
+          <a href="portfolio.html" class="btn btn-primary">Explore Portfolio</a>
+          <a href="contact.html" class="btn btn-secondary"
+            style="background: rgba(255,255,255,0.15); color: #FFFFFF; border-color: rgba(255,255,255,0.3);">Get Site Estimate</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- PROCESS TIMELINE -->
-    <section class="section">
-        <div class="container">
-            <div class="text-center reveal" style="margin-bottom: 4rem;">
-                <span class="eyebrow">The Method</span>
-                <h2>How We Work</h2>
-                <p class="italic" style="color: var(--secondary);">A meticulous journey through every second</p>
-            </div>
-
-            <div class="timeline"
-                style="display: flex; justify-content: space-between; position: relative; padding-top: 100px; gap: 2rem;">
-                <div class="timeline-line"
-                    style="position: absolute; top: 125px; left: 0; width: 100%; height: 1px; background: var(--border); z-index: 1;">
-                </div>
-
-                <div class="step reveal text-center" style="flex: 1; z-index: 2; position: relative;">
-                    <div class="step-img-wrapper" style="width: 100%; aspect-ratio: 16/10; overflow: hidden; border: 1px solid var(--border); margin-bottom: 2rem; position: relative; background: var(--bg-dark);">
-                        <img src="https://istrap.com.au/cdn/shop/articles/Are_Apple_Watches_waterproof_All_you_need_to_know..png?v=1684733796" 
-                             alt="Intake Documentation" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;">
-                    </div>
-                    <div class="step-icon"
-                        style="width: 50px; height: 50px; background: var(--secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin: -25px auto 1.5rem; position: relative; z-index: 3;">
-                        <i class="fas fa-clipboard-list"></i>
-                    </div>
-                    <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; font-family: 'Cinzel', serif;">Intake</h4>
-                    <p style="font-size: 1.1rem; padding: 0 10px;">Thorough assessment and valuation.</p>
-                </div>
-
-                <div class="step reveal text-center"
-                    style="flex: 1; z-index: 2; position: relative; transition-delay: 0.1s;">
-                    <div class="step-img-wrapper" style="width: 100%; aspect-ratio: 16/10; overflow: hidden; border: 1px solid var(--border); margin-bottom: 2rem; position: relative; background: var(--bg-dark);">
-                        <img src="https://www.watchrepairco.com/wp-content/uploads/2021/06/nyc_professional_watch.jpg" 
-                             alt="Inspection" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;">
-                    </div>
-                    <div class="step-icon"
-                        style="width: 50px; height: 50px; background: var(--secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin: -25px auto 1.5rem; position: relative; z-index: 3;">
-                        <i class="fas fa-microscope"></i>
-                    </div>
-                    <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; font-family: 'Cinzel', serif;">Inspection</h4>
-                    <p style="font-size: 1.1rem; padding: 0 10px;">Macro-analysis of every component.</p>
-                </div>
-
-                <div class="step reveal text-center"
-                    style="flex: 1; z-index: 2; position: relative; transition-delay: 0.2s;">
-                    <div class="step-img-wrapper" style="width: 100%; aspect-ratio: 16/10; overflow: hidden; border: 1px solid var(--border); margin-bottom: 2rem; position: relative; background: var(--bg-dark);">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZJ5gLej5h-z3-1ZbnoDbZo2IOseeuFx0MdQ&s" 
-                             alt="Cleansing" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;">
-                    </div>
-                    <div class="step-icon"
-                        style="width: 50px; height: 50px; background: var(--secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin: -25px auto 1.5rem; position: relative; z-index: 3;">
-                        <i class="fas fa-spray-can"></i>
-                    </div>
-                    <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; font-family: 'Cinzel', serif;">Cleansing</h4>
-                    <p style="font-size: 1.1rem; padding: 0 10px;">Ultrasonic non-invasive bath.</p>
-                </div>
-
-                <div class="step reveal text-center"
-                    style="flex: 1; z-index: 2; position: relative; transition-delay: 0.3s;">
-                    <div class="step-img-wrapper" style="width: 100%; aspect-ratio: 16/10; overflow: hidden; border: 1px solid var(--border); margin-bottom: 2rem; position: relative; background: var(--bg-dark);">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU7WeRj5QwnEn_cYGauidYgsXiEFieFPZd5Q&s" 
-                             alt="Restoration" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;">
-                    </div>
-                    <div class="step-icon"
-                        style="width: 50px; height: 50px; background: var(--secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin: -25px auto 1.5rem; position: relative; z-index: 3;">
-                        <i class="fas fa-cog"></i>
-                    </div>
-                    <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; font-family: 'Cinzel', serif;">Restoration</h4>
-                    <p style="font-size: 1.1rem; padding: 0 10px;">Expert technical intervention.</p>
-                </div>
-
-                <div class="step reveal text-center"
-                    style="flex: 1; z-index: 2; position: relative; transition-delay: 0.4s;">
-                    <div class="step-img-wrapper" style="width: 100%; aspect-ratio: 16/10; overflow: hidden; border: 1px solid var(--border); margin-bottom: 2rem; position: relative; background: var(--bg-dark);">
-                        <img src="https://cdn4.ethoswatches.com/the-watch-guide/wp-content/uploads/2023/09/Breitling-Navitimer-Automatic-Movement-Steel-case-Sapphire-Crystal-Brown-leather-strap-6.jpg?tr=q-70" 
-                             alt="Quality" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;">
-                    </div>
-                    <div class="step-icon"
-                        style="width: 50px; height: 50px; background: var(--secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin: -25px auto 1.5rem; position: relative; z-index: 3;">
-                        <i class="fas fa-check-double"></i>
-                    </div>
-                    <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; font-family: 'Cinzel', serif;">Quality</h4>
-                    <p style="font-size: 1.1rem; padding: 0 10px;">72-hour timing and sealing test.</p>
-                </div>
-            </div>
+  <!-- STATISTICS SECTION — clearly below hero, no overlap -->
+  <section class="stats" id="stats" style="margin-top: 0; box-shadow: none; border-radius: 0;">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-target="12" data-suffix="+">0</div>
+          <div class="stat-label">Years Experience</div>
         </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="section" style="background-color: var(--bg-light);">
-        <div class="container">
-            <div class="text-center reveal" style="margin-bottom: 4rem;">
-                <span class="eyebrow">The Reputation</span>
-                <h2>Voices of Appreciation</h2>
-            </div>
-
-            <div class="grid grid-3">
-                <div class="card reveal" style="border: none; background: transparent; box-shadow: none;">
-                    <div class="card-img-wrapper"
-                        style="border-radius: 50%; width: 100px; height: 100px; margin: 0 auto 1.5rem; overflow: hidden;">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-                            alt=" Marcus Thorpe" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="stars" style="color: var(--secondary); margin-bottom: 1rem;">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="italic serif" style="font-size: 1.2rem; line-height: 1.8;">"Expertly restored my diver
-                        watch that had seen better days. The water pressure test report gave confidence."</p>
-                    <span style="font-family: 'Cinzel', serif; font-size: 0.9rem; margin-top: 1.5rem; display: block;">—
-                        Marcus Thorpe, Horologist</span>
-                </div>
-                <div class="card reveal"
-                    style="border: none; background: transparent; box-shadow: none; transition-delay: 0.1s;">
-                    <div class="card-img-wrapper"
-                        style="border-radius: 50%; width: 100px; height: 100px; margin: 0 auto 1.5rem; overflow: hidden;">
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-                            alt="James Worthington" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="stars" style="color: var(--secondary); margin-bottom: 1rem;">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="italic serif" style="font-size: 1.2rem; line-height: 1.8;">"They didn't just fix the time;
-                        they restored a family heirloom I thought was lost forever. A master of the craft."</p>
-                    <span style="font-family: 'Cinzel', serif; font-size: 0.9rem; margin-top: 1.5rem; display: block;">—
-                        James Worthington, Collector</span>
-                </div>
-                <div class="card reveal"
-                    style="border: none; background: transparent; box-shadow: none; transition-delay: 0.2s;">
-                    <div class="card-img-wrapper"
-                        style="border-radius: 50%; width: 100px; height: 100px; margin: 0 auto 1.5rem; overflow: hidden;">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-                            alt="Client Portrait" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="stars" style="color: var(--secondary); margin-bottom: 1rem;">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="italic serif" style="font-size: 1.2rem; line-height: 1.8;">"Museum-grade precision. My
-                        1950s Chronograph is ticking better now than it was twenty years ago."</p>
-                    <span style="font-family: 'Cinzel', serif; font-size: 0.9rem; margin-top: 1.5rem; display: block;">—
-                        Arthur St. Clair, Curator</span>
-                </div>
-            </div>
-
-            <div class="text-center" style="margin-top: 4rem;">
-                <a href="#" class="btn btn-outline">Read More Reviews</a>
-            </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="150" data-suffix="+">0</div>
+          <div class="stat-label">Heavy Sites Photographed</div>
         </div>
-    </section>
-
-    <!-- FINAL CTA -->
-    <section class="section"
-        style="background-color: var(--always-dark); padding: 100px 0; position: relative; overflow: hidden;">
-        <i class="fas fa-clock"
-            style="position: absolute; top: 10%; left: -5%; font-size: 400px; color: rgba(255, 255, 255, 0.05);"></i>
-        <div class="container text-center reveal" style="position: relative; z-index: 1;">
-            <h2 style="color: var(--secondary); margin-bottom: 1.5rem;">Entrust Us With Your Timepiece</h2>
-            <p style="max-width: 600px; margin: 0 auto 2.5rem; color: var(--always-light); font-weight: 500;">Our master watchmakers
-                are ready to preserve the history of your most precious objects. Contact us today for a complimentary
-                initial assessment.</p>
-            <div class="contact-info-grid"
-                style="display: flex; justify-content: center; gap: 3rem; margin-bottom: 3rem;">
-                <div class="info-item" style="color: var(--always-light);">
-                    <i class="fas fa-phone" style="color: var(--secondary); margin-right: 10px;"></i>
-                    <span>(555) WATCH-01</span>
-                </div>
-                <div class="info-item" style="color: var(--always-light);">
-                    <i class="fas fa-envelope" style="color: var(--secondary); margin-right: 10px;"></i>
-                    <span>hello@horlogerie-restore.com</span>
-                </div>
-            </div>
-            <a href="contact.html" class="btn btn-primary" style="background-color: var(--secondary);">Request a
-                Restoration Quote</a>
+        <div class="stat-item">
+          <div class="stat-number" data-target="45" data-suffix="+">0</div>
+          <div class="stat-label">PR & Engineering Clients</div>
         </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col reveal">
-                    <a href="index.html" class="logo" style="display: block; margin-bottom: 1.5rem;"><i
-                            class="fas fa-clock" style="margin-right: 10px;"></i>RESTORE</a>
-                    <p style="font-size: 0.9rem; opacity: 0.7;">Restoring time's treasures since 1987. We specialize in
-                        the preservation and technical restoration of vintage mechanical timepieces from the world's
-                        finest manufactures.</p>
-                    <div class="social-links" style="margin-top: 1.5rem; display: flex; gap: 1rem;">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col reveal" style="transition-delay: 0.1s;">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="story.html">Story</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="process.html">Process</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col reveal" style="transition-delay: 0.2s;">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">Movement Overhaul</a></li>
-                        <li><a href="services.html">Case Restoration</a></li>
-                        <li><a href="services.html">Dial Refinishing</a></li>
-                        <li><a href="services.html">Strap Customization</a></li>
-                        <li><a href="services.html">Assessment</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col reveal" style="transition-delay: 0.3s;">
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--secondary);"></i>
-                            14 Clockmaker's Lane, Suite 3</li>
-                        <li><i class="fas fa-phone" style="margin-right: 10px; color: var(--secondary);"></i> (555)
-                            WATCH-01</li>
-                        <li><i class="fas fa-envelope" style="margin-right: 10px; color: var(--secondary);"></i>
-                            hello@restore-watch.com</li>
-                        <li><i class="fas fa-clock" style="margin-right: 10px; color: var(--secondary);"></i> Mon–Fri
-                            9am–6pm</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Restore Watch Restoration. All rights reserved.</p>
-            </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="100" data-suffix="%">0</div>
+          <div class="stat-label">OSHA Safety Compliance</div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <button class="back-to-top" aria-label="Back to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+  <!-- SERVICES PREVIEW SECTION -->
+  <section class="section" id="services-preview">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Sectors I Serve</span>
+        <h2 class="section-title">Sectors I Serve</h2>
+        <p class="section-subtitle">I capture the scale, engineering detail, and human grit across three core sectors, delivering polished assets for bids, reports, and PR.</p>
+      </div>
+      <div class="cards-grid center-last-card">
+        <!-- Card 1 -->
+        <div class="premium-card">
+          <div class="card-img-wrapper">
+            <img src="images/manufacturing.jpg"
+              alt="Automated robotic welding arms in a high-tech vehicle assembly line throwing orange sparks">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Heavy Manufacturing & Assembly</h3>
+            <p class="card-desc">Showcasing automated assembly floors, tool fabrication lines, and precision welding workshops with dramatic cinematic light profiles that honor worker craftsmanship.</p>
+            <ul class="card-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Macro detail & worker portraits</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Dynamic action action-capture</span>
+              </li>
+            </ul>
+            <a href="services.html" class="btn btn-accent card-cta" style="white-space: nowrap;">Explore Manufacturing</a>
+          </div>
+        </div>
 
-    <!-- SCRIPTS -->
-    <script src="main.js"></script>
-    <script>
-        // Initialize comparison slider
-        document.addEventListener('DOMContentLoaded', () => {
-            const comparisonContainer = document.querySelector('.comparison-container');
-            if (comparisonContainer) {
-                initComparisonSlider(comparisonContainer);
-            }
-        });
-    </script>
+        <!-- Card 2 -->
+        <div class="premium-card">
+          <div class="card-img-wrapper">
+            <img src="images/infrastructure.jpg" alt="A massive steel suspension bridge build in golden hour sunset sky">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Civil Infrastructure & Construction</h3>
+            <p class="card-desc">Documenting major roadworks, bridge build sequences, structural pours, and transit system developments for engineering briefs and PR updates.</p>
+            <ul class="card-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Wide-angle engineering scope</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Drone surveys & time-lapse</span>
+              </li>
+            </ul>
+            <a href="services.html" class="btn btn-accent card-cta" style="white-space: nowrap;">Explore Infrastructure</a>
+          </div>
+        </div>
 
-    <style>
-        @keyframes rotate {
-            from {
-                transform: rotate(0deg);
-            }
+        <!-- Card 3 -->
+        <div class="premium-card">
+          <div class="card-img-wrapper">
+            <img src="images/energy.jpg" alt="Vast wind turbines on hillside operating at sunset">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Energy, Utilities & Power Grid</h3>
+            <p class="card-desc">Cinematic imagery of green energy wind farms, solar fields, hydro-dams, and transmission grids illustrating corporate scale and sustainability.</p>
+            <ul class="card-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Environmental impact landscapes</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Substation & high-voltage line views</span>
+              </li>
+            </ul>
+            <a href="services.html" class="btn btn-accent card-cta" style="white-space: nowrap;">Explore Energy Sector</a>
+          </div>
+        </div>
+      </div>
+  <!-- PORTFOLIO PREVIEW SECTION (BEFORE/AFTER SLIDER) -->
+  <section class="section" id="portfolio-preview" style="background: var(--bg-main);">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Visual Transformation</span>
+        <h2 class="section-title">Visual
+ Showcase</h2>
+        <p class="section-subtitle">Slide the interactive handle to witness how raw flat-profile captures are developed into high-contrast, premium, color-graded corporate assets ready for publication.</p>
+      </div>
 
-            to {
-                transform: rotate(360deg);
-            }
-        }
+      <div class="comparison-slider-wrapper">
+        <div class="comparison-slider">
+          <!-- Before Image (Base layer) -->
+          <div class="slider-img slider-before">
+            <img src="images/raw_photo.jpg" alt="Unprocessed raw camera photograph of steel furnace with flat gray profile">
+          </div>
 
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-        }
+          
+          
+        </div>
+      </div>
 
-        .reveal.revealed {
-            opacity: 1;
-            transform: translateY(0);
-        }
+      <div style="text-align: center; margin-top: 3.5rem;">
+        <a href="portfolio.html" class="btn btn-primary">View Full Portfolio</a>
+      </div>
+    </div>
+  </section>
 
-        /* Responsive adjustments for timeline */
-        @media (max-width: 768px) {
-            .timeline {
-                flex-direction: column;
-                gap: 2rem;
-                padding-top: 0;
-            }
+  <!-- TESTIMONIALS SECTION -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Client Reviews</span>
+        <h2 class="section-title">Trusted by Engineering & PR Firms</h2>
+        <p class="section-subtitle">Read how my industrial photography assets have elevated bids, annual reports, and media kits for leading firms.</p>
+      </div>
 
-            .timeline-line {
-                display: none;
-            }
+      <div class="cards-grid center-last-card">
+        <!-- Testimonial 1 -->
+        <div class="premium-card" style="background: var(--bg-card);">
+          <div class="card-img-wrapper">
+            <img src="https://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/743/cached.offlinehbpl.hbpl.co.uk/news/OMC/paypal-20140610084057742.gif">
+          </div>
+          <div class="card-body" style="padding: 2.5rem;">
+            <div style="display: flex; gap: 0.25rem; color: #F59E0B; margin-bottom: 1.5rem;">
+              <!-- Stars -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <p style="font-style: italic; margin-bottom: 2rem; font-weight: 420; color: var(--text-muted);">&ldquo;Indus Photo captured our heavy gas turbine plant with absolute precision. The photographer integrated seamlessly with our site safety guidelines, worked around active machinery, and delivered spectacular, PR-ready images.&rdquo;</p>
+            <div style="display: flex; align-items: center; gap: 1rem; margin-top: auto;">
+              <div>
+                <h4 style="font-size: 1rem; font-weight: 550;">Marcus Sterling</h4>
+                <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 400;">VP of Engineering, Apex Systems</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-            .step {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
+        <!-- Testimonial 2 -->
+        <div class="premium-card" style="background: var(--bg-card);">
+          <div class="card-img-wrapper">
+            <img src="https://the-talks.com/wp-content/uploads/2023/03/Sarah-Polley-01.jpg" alt="Bridge construction photography for PR campaign">
+          </div>
+          <div class="card-body" style="padding: 2.5rem;">
+            <div style="display: flex; gap: 0.25rem; color: #F59E0B; margin-bottom: 1.5rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <p style="font-style: italic; margin-bottom: 2rem; font-weight: 420; color: var(--text-muted);">&ldquo;Managing media campaigns for civil works requires dynamic, compliant imagery. Indus Photo coordinated bridge-build photography with aerial drone surveys. Having fully OSHA-certified crews makes site booking stress-free.&rdquo;</p>
+            <div style="display: flex; align-items: center; gap: 1rem; margin-top: auto;">
+              <div>
+                <h4 style="font-size: 1rem; font-weight: 550;">Sarah Jenkins</h4>
+                <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 400;">PR Director, Communications</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-            .comparison-container {
-                height: 300px;
-            }
-        }
-    </style>
+        <!-- Testimonial 3 -->
+        <div class="premium-card" style="background: var(--bg-card);">
+          <div class="card-img-wrapper">
+            <img src="https://media.licdn.com/dms/image/v2/C5622AQEuNKl2VkpMsQ/feedshare-shrink_800/feedshare-shrink_800/0/1669212962368?e=2147483647&v=beta&t=11tzEqVJGjX1sDvE5JywI9dfPtG94aQ6zM55JZPFwgc" alt="Wind turbine farm photographed for ESG corporate report">
+          </div>
+          <div class="card-body" style="padding: 2.5rem;">
+            <div style="display: flex; gap: 0.25rem; color: #F59E0B; margin-bottom: 1.5rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <p style="font-style: italic; margin-bottom: 2rem; font-weight: 420; color: var(--text-muted);">&ldquo;For our corporate ESG reports, we needed energy transition portfolio assets. Indus Photo shot wind turbining projects under extreme conditions. The cinematic quality is absolute gold.&rdquo;</p>
+            <div style="display: flex; align-items: center; gap: 1rem; margin-top: auto;">
+              <div>
+                <h4 style="font-size: 1rem; font-weight: 550;">Dave Kaczmarek</h4>
+                <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 400;">ESG Lead, Great Lakes Energy Dev</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY INDUS PHOTO SECTION -->
+  <section class="section"
+    style="background: var(--bg-card); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="stack-on-mobile"
+        style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;">
+        <div class="safety-text-wrapper">
+          <span class="badge">Safety & Certifications</span>
+          <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; line-height: 1.2;">Fully Certified for Hazardous Industrial Environments</h2>
+          <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.05rem; line-height: 1.75;">Unlike generic commercial photographers, Indus Photo operates with a safety-first methodology. I carry all necessary regulatory site permissions, undergo routine physical hazard briefings, and wear standard-compliant PPE on every shoot.
+          </p>
+          <a href="about.html" class="btn btn-primary">About safety protocols</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+            <div
+              style="width: 52px; height: 52px; background: var(--premium-gradient); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <div>
+              <h4 style="font-weight: 560; font-size: 1.05rem; margin-bottom: 0.4rem;">OSHA-30 Certified Crews</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">I am OSHA-30 trained to identify hazards and operate safely alongside manufacturing lines.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+            <div
+              style="width: 52px; height: 52px; background: var(--premium-gradient); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <div>
+              <h4 style="font-weight: 560; font-size: 1.05rem; margin-bottom: 0.4rem;">FAA Part 107 Drone License</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">Fully licensed commercial drone pilots permitted for mapping utility towers and structural progress.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+            <div
+              style="width: 52px; height: 52px; background: var(--premium-gradient); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </div>
+            <div>
+              <h4 style="font-weight: 560; font-size: 1.05rem; margin-bottom: 0.4rem;">TWIC & Port Access Cleared</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">I hold active Transportation Worker Identification Credentials for secure marine terminal and infrastructure entry.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+            <div
+              style="width: 52px; height: 52px; background: var(--premium-gradient); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <div>
+              <h4 style="font-weight: 560; font-size: 1.05rem; margin-bottom: 0.4rem;">$5M Commercial General Liability</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">Full insurance coverage designed for enterprise site managers and civil engineering operations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="section" id="proposal-cta-section"
+    style="background: var(--bg-main); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); text-align: center; position: relative; overflow: hidden;">
+    <div
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--premium-gradient); opacity: 0.04;">
+    </div>
+    <div class="container" style="position: relative; z-index: 2; max-width: 800px;">
+      <h2 class="section-title">Request a Site Photography Proposal</h2>
+      <p class="lead-text" style="margin-bottom: 2.5rem;">Partner with the premium photographer trusted by infrastructure operators and PR teams. Tell me about your site safety specifications, location boundaries, and target media deadline.</p>
+      <a href="contact.html" class="btn btn-primary">Request Proposal</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">I</div>
+            <div class="logo-text">Indus Photo<span>.</span></div>
+          </a>
+          <p class="footer-desc">Cinematic heavy industry, energy sector, and infrastructure project photography for engineering contractors and media teams.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn brand-linkedin" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="#" class="social-btn brand-facebook" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-btn brand-twitter" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" class="social-btn brand-instagram" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About Me</a></li>
+            <li><a href="process.html" class="footer-link">My Process</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+            <li><a href="about.html#faq" class="footer-link">FAQs</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Sectors</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Manufacturing</a></li>
+            <li><a href="services.html" class="footer-link">Infrastructure</a></li>
+            <li><a href="services.html" class="footer-link">Energy & Utilities</a></li>
+            <li><a href="services.html" class="footer-link">Drone Operations</a></li>
+            <li><a href="services.html" class="footer-link">Corporate Portraits</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Contact Studio</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>700 Steel Boulevard, Suite 100, Pittsburgh, PA 15222</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            <span>(800) 555-PHOT</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>contact@indusphoto.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Indus Photo. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top Button -->
+  <button id="scroll-top" class="scroll-top-btn" aria-label="Scroll to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Script JS Link -->
+  <script src="main.js"></script>
+
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Indus Photo Industrial Photography",
+    "image": "images/hero_industrial.png",
+    "@id": "https://www.indusphoto.com/#studio",
+    "url": "https://www.indusphoto.com",
+    "telephone": "+1-800-555-7468",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "700 Steel Boulevard, Suite 100",
+      "addressLocality": "Pittsburgh",
+      "addressRegion": "PA",
+      "postalCode": "15222",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.4406,
+      "longitude": -79.9959
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  }
+  </script>
 </body>
+
 </html>
