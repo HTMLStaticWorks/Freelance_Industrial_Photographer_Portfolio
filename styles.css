@@ -140,6 +140,14 @@ p, .body-text, li, span {
   color: var(--text-muted) !important;
 }
 
+.inner-hero-subtext {
+  font-family: var(--font-body);
+  font-weight: 480 !important;
+  font-size: clamp(1.05rem, 1.5vw, 1.35rem) !important;
+  line-height: 1.6;
+  color: rgba(248, 250, 252, 0.95) !important;
+}
+
 .btn, button, input[type="submit"] {
   font-family: var(--font-body);
   font-weight: 510 !important; /* Clear but not heavy: 500-520 */
@@ -377,7 +385,7 @@ body.dark-mode .badge {
 /* Theme Toggle */
 .theme-toggle {
   background: none;
-  border: none;
+  border: 1px solid rgba(15, 23, 42, 0.22); /* More visible medium-contrast border */
   color: var(--text-main) !important;
   cursor: pointer;
   font-size: 1.25rem;
@@ -387,11 +395,16 @@ body.dark-mode .badge {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background var(--transition-fast);
+  transition: all var(--transition-fast);
+}
+
+body.dark-mode .theme-toggle {
+  border: 1px solid rgba(249, 250, 252, 0.35); /* More visible medium-contrast border for dark mode */
 }
 
 .theme-toggle:hover {
   background: rgba(14, 165, 233, 0.1);
+  border-color: var(--accent);
 }
 
 .theme-toggle .sun-icon {
