@@ -315,11 +315,34 @@ body.dark-mode .badge {
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.logo-graphics {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: block;
+}
+
+.logo-brand {
   font-family: var(--font-heading);
-  font-weight: 580;
-  font-size: 1.5rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-main);
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+.logo-brand strong {
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.logo-accent {
   color: var(--accent);
+  font-weight: 300;
 }
 
 .logo-icon {
