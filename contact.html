@@ -24,9 +24,28 @@
   <header class="header sticky" id="header" style="background: var(--bg-header); border-bottom: 1px solid rgba(255,255,255,0.12);">
     <div class="container header-container">
       <a href="index.html" class="logo">
-        <div class="logo-icon">I</div>
-        <div class="logo-text">Indus Photo<span>.</span></div>
-      </a>
+          <svg class="logo-graphics" width="160" height="38" viewBox="0 0 160 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g transform="translate(2, 3)">
+            <polygon points="16,2 30,10 30,26 16,34 2,26 2,10" stroke="url(#logo-gradient)" stroke-width="2" fill="none" />
+            <circle cx="16" cy="18" r="8" stroke="var(--text-main)" stroke-width="1.5" />
+            <path d="M16,10 L16,18" stroke="url(#logo-gradient)" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M23,14 L16,18" stroke="url(#logo-gradient)" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M23,22 L16,18" stroke="url(#logo-gradient)" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M16,26 L16,18" stroke="url(#logo-gradient)" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M9,22 L16,18" stroke="url(#logo-gradient)" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M9,14 L16,18" stroke="url(#logo-gradient)" stroke-width="1.5" stroke-linecap="round" />
+            <circle cx="16" cy="18" r="2.5" fill="var(--accent)" />
+          </g>
+          <text x="44" y="24" font-family="var(--font-heading)" font-weight="700" font-size="17" fill="var(--text-main)" letter-spacing="0.04em">INDUS</text>
+          <text x="101" y="24" font-family="var(--font-heading)" font-weight="300" font-size="17" fill="var(--accent)" letter-spacing="0.04em">PHOTO</text>
+          <defs>
+            <linearGradient id="logo-gradient" x1="2" y1="2" x2="30" y2="34" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#F97316" />
+              <stop offset="100%" stop-color="#EF4444" />
+            </linearGradient>
+          </defs>
+        </svg>
+        </a>
       <nav class="nav" id="nav-menu">
         <div class="nav-dropdown desktop-only">
           <a href="#" class="nav-link dropdown-toggle" id="nav-home">Home <svg class="dropdown-arrow" width="10"
@@ -52,7 +71,7 @@
           <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
           <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
         </button>
-        <a href="contact.html" class="btn btn-primary desktop-only" style="padding: 0.6rem 1.25rem; font-size: 0.9rem;">Reach Me</a>
+        <a href="contact.html" class="btn btn-primary desktop-only">Reach Me</a>
         <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -64,8 +83,10 @@
   </header>
 
   <!-- INNER PAGE HERO -->
-  <section class="section" style="padding-top: 10rem; padding-bottom: 5rem; background: var(--primary); color: #FFFFFF; position: relative;">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--premium-gradient); opacity: 0.05;"></div>
+  <section class="inner-hero">
+    <div class="hero-bg">
+      <img src="images/contact_hero.png" alt="Modern steel and glass office headquarters building background">
+    </div>
     <div class="container" style="position: relative; z-index: 2; text-align: center;">
       <span class="badge" style="background: rgba(255,255,255,0.1); color: #FFFFFF; border-color: rgba(255,255,255,0.2);">Project Planning</span>
       <h1 style="color: #FFFFFF; font-size: clamp(3.5rem, 6vw, 4.5rem); margin-bottom: 1rem;">Project Inquiry</h1>
@@ -131,19 +152,19 @@
           <div style="text-align: center;">
             <h4 style="font-size: 1rem; margin-bottom: 0.5rem; font-weight: 500;">Professional Network</h4>
             <div class="social-links" style="margin-top: 0; justify-content: center;">
-              <a href="#" class="social-btn brand-linkedin" aria-label="LinkedIn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-              </a>
-              <a href="#" class="social-btn brand-facebook" aria-label="Facebook">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-              </a>
-              <a href="#" class="social-btn brand-twitter" aria-label="Twitter">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
-              </a>
-              <a href="#" class="social-btn brand-instagram" aria-label="Instagram">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-              </a>
-            </div>
+            <a href="#" class="social-btn brand-linkedin" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="#" class="social-btn brand-facebook" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+            </a>
+            <a href="#" class="social-btn brand-x" aria-label="X (Twitter)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-btn brand-instagram" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+          </div>
           </div>
 
           <!-- MAP CONTAINER (Aligned left under socials) -->
@@ -277,22 +298,41 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="logo">
-            <div class="logo-icon">I</div>
-            <div class="logo-text">Indus Photo<span>.</span></div>
-          </a>
+          <svg class="logo-graphics" width="160" height="38" viewBox="0 0 160 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g transform="translate(2, 3)">
+            <polygon points="16,2 30,10 30,26 16,34 2,26 2,10" stroke="url(#logo-gradient)" stroke-width="2" fill="none" />
+            <circle cx="16" cy="18" r="8" stroke="var(--text-main)" stroke-width="1.5" />
+            <path d="M16,10 L16,18" stroke="url(#logo-gradient)" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M23,14 L16,18" stroke="url(#logo-gradient)" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M23,22 L16,18" stroke="url(#logo-gradient)" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M16,26 L16,18" stroke="url(#logo-gradient)" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M9,22 L16,18" stroke="url(#logo-gradient)" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M9,14 L16,18" stroke="url(#logo-gradient)" stroke-width="1.5" stroke-linecap="round" />
+            <circle cx="16" cy="18" r="2.5" fill="var(--accent)" />
+          </g>
+          <text x="44" y="24" font-family="var(--font-heading)" font-weight="700" font-size="17" fill="var(--text-main)" letter-spacing="0.04em">INDUS</text>
+          <text x="101" y="24" font-family="var(--font-heading)" font-weight="300" font-size="17" fill="var(--accent)" letter-spacing="0.04em">PHOTO</text>
+          <defs>
+            <linearGradient id="logo-gradient" x1="2" y1="2" x2="30" y2="34" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#F97316" />
+              <stop offset="100%" stop-color="#EF4444" />
+            </linearGradient>
+          </defs>
+        </svg>
+        </a>
           <p class="footer-desc">Cinematic heavy industry, energy sector, and infrastructure project photography for engineering contractors and media teams.</p>
           <div class="social-links">
             <a href="#" class="social-btn brand-linkedin" aria-label="LinkedIn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
             </a>
             <a href="#" class="social-btn brand-facebook" aria-label="Facebook">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
             </a>
-            <a href="#" class="social-btn brand-twitter" aria-label="Twitter">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            <a href="#" class="social-btn brand-x" aria-label="X (Twitter)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
             </a>
             <a href="#" class="social-btn brand-instagram" aria-label="Instagram">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
             </a>
           </div>
         </div>

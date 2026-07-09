@@ -90,7 +90,7 @@ body {
 h1, .h1 {
   font-family: var(--font-heading);
   font-weight: 580 !important; /* Max weight — never 600+ */
-  font-size: clamp(3rem, 6vw, 4.5rem) !important; /* 48px to 72px (lower end of scale) */
+  font-size: clamp(2.25rem, 4.5vw, 3.25rem) !important; /* Reduced for better balance */
   line-height: 1.1;
   color: var(--text-main);
   letter-spacing: -0.025em;
@@ -99,7 +99,7 @@ h1, .h1 {
 h2, .h2 {
   font-family: var(--font-heading);
   font-weight: 540 !important; /* Max weight — never 600+ */
-  font-size: clamp(2rem, 4vw, 3rem) !important; /* 32px to 48px (lower end of scale) */
+  font-size: clamp(1.75rem, 3.2vw, 2.35rem) !important; /* Reduced for better balance */
   line-height: 1.2;
   color: var(--text-main);
   letter-spacing: -0.02em;
@@ -108,7 +108,7 @@ h2, .h2 {
 h3, .h3 {
   font-family: var(--font-heading);
   font-weight: 520 !important; /* Max weight — never 600+ */
-  font-size: clamp(1.5rem, 2.5vw, 2rem) !important; /* 24px to 32px (lower end of scale) */
+  font-size: clamp(1.35rem, 2.2vw, 1.65rem) !important; /* Reduced for better balance */
   line-height: 1.25;
   color: var(--text-main);
   letter-spacing: -0.01em;
@@ -119,7 +119,7 @@ h5, .h5,
 h6, .h6 {
   font-family: var(--font-heading);
   font-weight: 500 !important; /* Subheading level */
-  font-size: clamp(1.15rem, 1.8vw, 1.45rem) !important; /* 18px to 23px (lower end of scale) */
+  font-size: clamp(1.1rem, 1.6vw, 1.3rem) !important; /* Reduced for better balance */
   line-height: 1.35;
   color: var(--text-main);
 }
@@ -2367,15 +2367,19 @@ body.dark-mode .map-container iframe {
   border-color: #1877F2 !important;
 }
 
-.social-btn.brand-twitter {
-  color: #1DA1F2;
-  border-color: rgba(29, 161, 242, 0.35);
-  background: rgba(29, 161, 242, 0.06);
+.social-btn.brand-x {
+  color: var(--text-main);
+  border-color: rgba(15, 23, 42, 0.35);
+  background: rgba(15, 23, 42, 0.06);
 }
-.social-btn.brand-twitter:hover {
-  background: #1DA1F2 !important;
-  color: #FFFFFF !important;
-  border-color: #1DA1F2 !important;
+body.dark-mode .social-btn.brand-x {
+  border-color: rgba(249, 250, 252, 0.35);
+  background: rgba(249, 250, 252, 0.06);
+}
+.social-btn.brand-x:hover {
+  background: var(--text-main) !important;
+  color: var(--bg-main) !important;
+  border-color: var(--text-main) !important;
 }
 
 .social-btn.brand-instagram {
@@ -2989,5 +2993,176 @@ body.dark-mode .map-container iframe {
   justify-content: center !important;
 }
 
+/* --- ADDED CUSTOM STYLE REFINEMENTS --- */
 
+/* Header Actions Button & Toggle Consistency */
+.header-actions .theme-toggle {
+  border-radius: var(--radius-sm) !important;
+  width: 40px;
+  height: 40px;
+}
+.header-actions .btn {
+  height: 40px !important;
+  box-sizing: border-box;
+  padding: 0 1.5rem !important;
+  /* Removed display: inline-flex !important to respect desktop-only visibility on mobile */
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 0.9rem !important;
+  border-radius: var(--radius-sm) !important;
+  margin-top: 0 !important;
+}
 
+/* Card CTA alignment at the bottom of the card */
+.premium-card .card-cta,
+.premium-card .btn.card-cta {
+  margin-top: auto !important;
+}
+
+/* Inner Hero Styles - Scaling heights for visual impact */
+.inner-hero {
+  padding: 9rem 0 4.5rem;
+  background: var(--primary);
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+}
+.inner-hero .hero-bg img {
+  opacity: 0.35 !important;
+}
+
+@media (min-width: 768px) {
+  .inner-hero {
+    padding: 18rem 0 12rem;
+    min-height: 620px;
+  }
+  .inner-hero .hero-bg img {
+    opacity: 0.52 !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .inner-hero {
+    padding: 22rem 0 14rem;
+    min-height: 740px;
+  }
+  .inner-hero .hero-bg img {
+    opacity: 0.55 !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .inner-hero {
+    padding: 28rem 0 18rem;
+    min-height: 900px;
+  }
+  .inner-hero .hero-bg img {
+    opacity: 0.58 !important;
+  }
+}
+
+/* ─── 360px: Home hero – stack buttons & show bg image below trust badges ─── */
+@media (max-width: 360px) {
+  /* Stack CTA buttons one by one */
+  .hero > .container > div > div[style*="display: flex"][style*="gap: 1.25rem"],
+  .hero div[style*="display: flex"][style*="gap: 1.25rem"][style*="justify-content: center"][style*="padding-bottom"] {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.85rem !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+
+  /* Make sure each button fills full width and is clearly separated */
+  .hero .btn {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  /* Hero bg image: pull out of absolute flow and show below trust badges */
+  .hero {
+    flex-direction: column !important;
+    height: auto !important;
+    min-height: auto !important;
+    padding-bottom: 0 !important;
+    overflow: visible !important;
+  }
+
+  .hero-bg {
+    position: relative !important;
+    width: 100% !important;
+    height: 220px !important;
+    order: 10;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+
+  .hero-bg img {
+    opacity: 1 !important;
+    filter: none !important;
+    border-radius: 0;
+  }
+
+  .hero-bg::after {
+    display: none !important;
+  }
+
+  /* Content sits above, bg image flows below */
+  .hero > .container {
+    order: 1;
+    position: relative !important;
+    z-index: 2;
+    padding-top: 7rem !important;
+    padding-bottom: 1.5rem !important;
+    background: var(--primary);
+  }
+
+  /* ─── 360px: Inner-page heroes – show bg image below text, not as overlay ─── */
+  .inner-hero {
+    flex-direction: column !important;
+    height: auto !important;
+    min-height: auto !important;
+    padding-top: 5rem !important;
+    padding-bottom: 0 !important;
+    overflow: visible !important;
+    align-items: stretch !important;
+  }
+
+  /* Content block sits on top with a solid background */
+  .inner-hero > .container {
+    order: 1;
+    position: relative !important;
+    z-index: 2;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    background: var(--primary);
+  }
+
+  /* Pull the bg wrapper out of absolute stacking and place it below */
+  .inner-hero .hero-bg {
+    position: relative !important;
+    order: 10;
+    width: 100% !important;
+    height: 220px !important;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+
+  /* Show image at full opacity – it's decorative below the text now */
+  .inner-hero .hero-bg img {
+    opacity: 1 !important;
+    filter: none !important;
+    border-radius: 0;
+    object-fit: cover;
+  }
+
+  /* Remove the dark overlay so the image is fully visible */
+  .inner-hero .hero-bg::after {
+    display: none !important;
+  }
+}
